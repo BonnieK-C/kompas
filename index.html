@@ -1,0 +1,1187 @@
+<!doctype html>
+<html lang="da">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Det politiske kompas: et feedbackværktøj til samfundsfag om fordelingspolitik, værdipolitik og Folketingets partier.">
+<title>Det politiske kompas</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 64 64&quot;%3E%3Crect width=&quot;64&quot; height=&quot;64&quot; rx=&quot;15&quot; fill=&quot;%231D3E5E&quot;/%3E%3Ccircle cx=&quot;32&quot; cy=&quot;32&quot; r=&quot;24.5&quot; fill=&quot;none&quot; stroke=&quot;%23F4F1EA&quot; stroke-width=&quot;2&quot; opacity=&quot;.55&quot;/%3E%3Cpath d=&quot;M32 6v52M6 32h52&quot; stroke=&quot;%23F4F1EA&quot; stroke-width=&quot;2.6&quot; stroke-linecap=&quot;round&quot; opacity=&quot;.5&quot;/%3E%3Cpolygon points=&quot;15.74,15.74 38.01,25.99 25.99,38.01&quot; fill=&quot;%23D6243A&quot;/%3E%3Cpolygon points=&quot;48.26,48.26 38.01,25.99 25.99,38.01&quot; fill=&quot;%235B9BEA&quot;/%3E%3Ccircle cx=&quot;32&quot; cy=&quot;32&quot; r=&quot;4&quot; fill=&quot;%23F4F1EA&quot;/%3E%3Ccircle cx=&quot;32&quot; cy=&quot;32&quot; r=&quot;1.6&quot; fill=&quot;%231D3E5E&quot;/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: one centered column; a step rail on top; part 3 pairs a square compass board with a feedback panel that stacks below on phones. Party colours appear only on party badges and chips; everything else stays neutral. */
+:root{
+  --bg:#F1F2EF; --surface:#FFFFFF; --sunk:#E7E9E4; --ink:#171D24; --muted:#5C6570; --line:#D5D9D2; --grid:#E9ECE6; --grid-major:#D3D8CF; --seat:#DADED6; --qtint:rgba(29,62,94,.04); --on-band:#FFFFFF; --on-luke:#14181D; --bz-red:#FBEDEB; --bz-red-line:#E7B9B1; --bz-blue:#EBF1F9; --bz-blue-line:#B5C8E2; --hm1:#EEF2F6; --hm2:#C9D6E4; --hm3:#93AECB; --hm4:#4F7AA6; --hm5:#1D3E5E; --hm-ink-dark:#14181D; --hm-ink-light:#FFFFFF;
+  --accent:#1D3E5E; --accent-ink:#FFFFFF; --accent-soft:#E0E8F0;
+  --good:#24804A; --good-soft:#E0F1E6; --bad:#B0402C; --bad-soft:#F7E4DF;
+  --t-cold:#4C7CC7; --t-luke:#C99A16; --t-warm:#E06A28; --t-hit:#24804A;
+  --shadow:0 1px 2px rgba(23,29,36,.06),0 4px 14px rgba(23,29,36,.06);
+  --f-display:"Bricolage Grotesque","Schibsted Grotesk",system-ui,sans-serif;
+  --f-body:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r:12px;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#111519; --surface:#192027; --sunk:#222A33; --ink:#E7EBEF; --muted:#9BA6B2; --line:#303B46; --grid:#1F272F; --grid-major:#313C47; --seat:#2E3842; --qtint:rgba(157,194,230,.05); --on-band:#14181D; --on-luke:#14181D; --bz-red:#2B1D1C; --bz-red-line:#6B3B33; --bz-blue:#1A2433; --bz-blue-line:#38506E; --hm1:#1F2933; --hm2:#2B4157; --hm3:#3F6386; --hm4:#6D96BF; --hm5:#B3CDE6; --hm-ink-dark:#E7EBEF; --hm-ink-light:#0E1A26;
+  --accent:#9DC2E6; --accent-ink:#0E1A26; --accent-soft:#223649;
+  --good:#5CC287; --good-soft:#1B3427; --bad:#E8826D; --bad-soft:#3A2420;
+  --t-cold:#7AA3E6; --t-luke:#E3BE4C; --t-warm:#F38E55; --t-hit:#5CC287;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25);
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#111519; --surface:#192027; --sunk:#222A33; --ink:#E7EBEF; --muted:#9BA6B2; --line:#303B46; --grid:#1F272F; --grid-major:#313C47; --seat:#2E3842; --qtint:rgba(157,194,230,.05); --on-band:#14181D; --on-luke:#14181D; --bz-red:#2B1D1C; --bz-red-line:#6B3B33; --bz-blue:#1A2433; --bz-blue-line:#38506E; --hm1:#1F2933; --hm2:#2B4157; --hm3:#3F6386; --hm4:#6D96BF; --hm5:#B3CDE6; --hm-ink-dark:#E7EBEF; --hm-ink-light:#0E1A26;
+  --accent:#9DC2E6; --accent-ink:#0E1A26; --accent-soft:#223649;
+  --good:#5CC287; --good-soft:#1B3427; --bad:#E8826D; --bad-soft:#3A2420;
+  --t-cold:#7AA3E6; --t-luke:#E3BE4C; --t-warm:#F38E55; --t-hit:#5CC287;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;padding-inline:16px;padding-block:0 72px}
+.wrap{max-width:1040px;margin:0 auto}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.12}
+h1{font-size:clamp(2rem,5vw,3.1rem);font-weight:800;letter-spacing:-.015em}
+h2{font-size:clamp(1.35rem,3vw,1.7rem);font-weight:800;letter-spacing:-.01em}
+h3{font-size:1.1rem;font-weight:600}
+p{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+.eyebrow{font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.muted{color:var(--muted)}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+
+/* header */
+header{padding-block:40px 24px;display:grid;gap:12px}
+header .brand{display:flex;align-items:center;gap:clamp(12px,2vw,18px)}
+header .mark{width:clamp(46px,7vw,64px);height:auto;flex:none;filter:drop-shadow(0 3px 8px rgba(23,29,36,.18))}
+header .byline{font-size:.9rem;color:var(--muted)}
+header .byline b{color:var(--ink);font-weight:500}
+footer .credit{font-size:.9rem;color:var(--muted);margin-bottom:12px}
+header .lede{max-width:60ch;color:var(--muted);font-size:1.05rem}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px}
+.step{display:grid;gap:8px;text-align:left;padding:12px 14px 14px;border:1px solid var(--line);background:var(--surface);border-radius:var(--r);cursor:pointer}
+.step .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.step .t{font-weight:700}
+.step .c{font-size:.78rem;color:var(--muted)}
+.step .bar{height:4px;border-radius:2px;background:var(--sunk);overflow:hidden}
+.step .bar i{display:block;height:100%;background:var(--accent);width:0}
+.step[aria-current="step"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.step.locked{background:var(--sunk);color:var(--muted);cursor:not-allowed}
+.locknote{flex-basis:100%;text-align:right;color:var(--bad);font-size:.9rem;font-weight:500}
+.locknote:empty{display:none}
+@media (pointer:coarse),(max-width:640px){ .kbd-hint{display:none} }
+@media (max-width:520px){ .scorebar .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;width:100%} .scorebar .stat .v{font-size:1.25rem} .scorebar .stat .l{font-size:.64rem;line-height:1.3} .scorebar .actions{width:100%} .scorebar .actions .btn{flex:1 1 auto} .bz-chips{gap:6px} .bzone{padding:10px 6px} }
+body:not(.teacher) .teacher-only{display:none!important}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line)}
+#teacher{display:grid;gap:8px;margin-top:10px;max-width:420px}
+#teacher label{font-weight:500;color:var(--ink)}
+#teacher textarea{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font-family:var(--f-mono);font-size:.82rem;resize:vertical}
+.t-row{display:flex;gap:8px;flex-wrap:wrap}
+.t-row input{flex:1 1 160px;min-width:0;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit}
+.t-msg{color:var(--bad)}
+.t-msg.ok{color:var(--good)}
+#donebox{display:grid;gap:16px}
+.results .res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px}
+.res-col{display:grid;gap:10px;align-content:start;min-width:0}
+.bars{display:grid;gap:8px}
+.bar-row{display:grid;grid-template-columns:130px minmax(0,1fr) 44px;gap:10px;align-items:center;font-size:.9rem}
+.bar-track{height:10px;border-radius:5px;background:var(--sunk);overflow:hidden}
+.bar-track i{display:block;height:100%;background:var(--accent);border-radius:5px}
+.bar-row .mono{text-align:right;font-size:.85rem}
+.pattern{margin:0;padding-left:18px;display:grid;gap:6px}
+.share,.cert{display:grid;gap:10px;padding-top:16px;border-top:1px solid var(--line)}
+#cert-img{width:100%;max-width:440px;aspect-ratio:1080/1350;border:1px solid var(--line);border-radius:10px;background:#fff;box-shadow:var(--shadow)}
+.share textarea{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font-family:var(--f-mono);font-size:.82rem;resize:vertical}
+.share input{flex:1 1 180px;min-width:0;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit}
+@media (max-width:480px){ .bar-row{grid-template-columns:118px minmax(0,1fr) 40px;font-size:.82rem} }
+.t-msg:empty{display:none}
+.step{min-width:0}
+@media (max-width:640px){ .steps{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:520px){ .step{padding:10px} .step .t{font-size:.86rem} .step .top{flex-wrap:wrap;gap:0 6px} }
+
+section.part{display:grid;gap:24px}
+[hidden]{display:none!important}
+.intro{display:grid;gap:8px;max-width:68ch}
+.block{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:grid;gap:16px}
+@media (max-width:520px){ .block{padding:16px} }
+.block-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+
+/* MC questions */
+.q{display:grid;gap:10px;padding-block:18px;border-top:1px solid var(--line)}
+.q:first-of-type,.p-top + .q{border-top:0;padding-top:0}
+.q-text{font-weight:500;font-size:1.02rem}
+.opts{display:grid;gap:8px}
+.opt{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:center;text-align:left;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);cursor:pointer;line-height:1.4}
+.opt .k{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-mono);font-size:.8rem;font-weight:700;background:var(--surface);border:1px solid var(--line)}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt:disabled{cursor:default}
+.opt.right{border-color:var(--good);background:var(--good-soft)}
+.opt.right .k{background:var(--good);border-color:var(--good);color:var(--surface)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt.wrong .k{background:var(--bad);border-color:var(--bad);color:var(--surface)}
+.opt.dim{opacity:.5}
+.expl{padding:12px 14px;border-radius:10px;background:var(--sunk);font-size:.95rem;max-width:74ch}
+.expl b{font-weight:700}
+.tag{display:inline-block;justify-self:start;font-size:.7rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+
+/* classify */
+.sort{display:grid;gap:10px}
+.sort-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bg)}
+.sort-row .t{min-width:0}
+.seg{display:grid;grid-template-columns:repeat(3,auto);gap:6px}
+.seg button{border:1px solid var(--line);border-radius:999px;background:var(--surface);padding:8px 14px;cursor:pointer;font-size:.88rem;font-weight:500;line-height:1.2}
+.seg button:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft)}
+.seg button:disabled{cursor:default}
+.seg button.right{background:var(--good-soft);border-color:var(--good);font-weight:700}
+.seg button.wrong{background:var(--bad-soft);border-color:var(--bad);text-decoration:line-through}
+.seg button:disabled:not(.right):not(.wrong){opacity:.5}
+.sort-row .expl{grid-column:1/-1}
+@media (max-width:640px){ .sort-row{grid-template-columns:1fr;gap:10px} .seg{grid-template-columns:1fr;justify-self:stretch} .seg button{padding:10px 14px;text-align:left;border-radius:10px} }
+
+.score{font-family:var(--f-mono);font-size:.85rem;color:var(--muted)}
+.nextbar{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap}
+.btn{padding:11px 18px;border-radius:10px;border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink);font-weight:700;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--accent)}
+.btn:disabled{opacity:.5;cursor:default}
+
+/* party badge */
+.badge{display:inline-grid;place-items:center;min-width:40px;height:40px;padding:0 8px;border-radius:999px;font-family:var(--f-display);font-weight:800;font-size:.95rem;flex:none}
+
+/* party picker */
+.party-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,140px),1fr));gap:8px}
+.pbtn{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:center;text-align:left;padding:10px 12px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);cursor:pointer}
+.pbtn .nm{font-size:.85rem;font-weight:500;line-height:1.25;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:anywhere}
+.pbtn .pr{font-family:var(--f-mono);font-size:.72rem;color:var(--muted)}
+.pbtn.done .pr{color:var(--good)}
+@media (max-width:480px){ .pbtn{grid-template-columns:1fr;gap:6px;align-items:start} .pbtn .badge{min-width:36px;height:36px;font-size:.85rem;justify-self:start} .pbtn .nm{overflow-wrap:break-word;hyphens:manual;font-size:.8rem} }
+.pbtn[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.phead{display:flex;gap:14px;align-items:center}
+.phead .badge{min-width:52px;height:52px;font-size:1.15rem}
+.pfacts{display:flex;gap:16px;flex-wrap:wrap;font-size:.88rem;color:var(--muted)}
+.pfacts b{color:var(--ink);font-weight:500}
+
+/* compass */
+.compass-layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:24px;align-items:start}
+@media (max-width:880px){ .compass-layout{grid-template-columns:1fr} }
+.tray-wrap{display:grid;gap:8px}
+.tray{display:flex;flex-wrap:wrap;gap:10px;min-height:60px;padding:12px;border:1px dashed var(--line);border-radius:var(--r);background:var(--surface)}
+.tray:empty::after{content:"Alle partier er placeret i kompasset.";color:var(--muted);font-size:.9rem;align-self:center;padding-left:4px}
+.compass{display:grid;grid-template-columns:auto minmax(0,1fr) auto;grid-template-rows:auto auto auto;gap:12px;align-items:center;justify-items:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;box-shadow:var(--shadow)}
+.ax{font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:center;white-space:nowrap;line-height:1}
+.ax-top{grid-column:2;grid-row:1}
+.ax-bottom{grid-column:2;grid-row:3}
+.ax-left{grid-column:1;grid-row:2;writing-mode:vertical-rl;transform:rotate(180deg)}
+.ax-right{grid-column:3;grid-row:2;writing-mode:vertical-rl}
+/* pilespidser for enden af akserne, ens i alle fire retninger */
+.compass{overflow:hidden}
+.ah{position:absolute;width:0;height:0;pointer-events:none;border:6px solid transparent}
+.ah.r{right:-1px;top:50%;transform:translateY(-50%);border-right:0;border-left:9px solid var(--muted)}
+.ah.l{left:-1px;top:50%;transform:translateY(-50%);border-left:0;border-right:9px solid var(--muted)}
+.ah.u{top:-1px;left:50%;transform:translateX(-50%);border-top:0;border-bottom:9px solid var(--muted)}
+.ah.d{bottom:-1px;left:50%;transform:translateX(-50%);border-bottom:0;border-top:9px solid var(--muted)}
+#board{grid-column:2;grid-row:2;position:relative;width:100%;max-width:620px;aspect-ratio:1/1;background-color:var(--bg);border-radius:10px;border:1px solid var(--line);
+  background-image:linear-gradient(var(--grid-major) 1px,transparent 1px),linear-gradient(90deg,var(--grid-major) 1px,transparent 1px),linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:25% 25%,25% 25%,5% 5%,5% 5%;background-position:-1px -1px;touch-action:none}
+.qt{position:absolute;width:50%;height:50%;background:var(--qtint);pointer-events:none}
+.qt.a{left:0;top:0;border-top-left-radius:10px}.qt.b{right:0;bottom:0;border-bottom-right-radius:10px}
+.tick{position:absolute;font-family:var(--f-mono);font-size:.62rem;color:var(--muted);pointer-events:none;line-height:1;font-variant-numeric:tabular-nums}
+.origin{position:absolute;left:50%;top:50%;width:7px;height:7px;border-radius:50%;background:var(--muted);transform:translate(-50%,-50%);pointer-events:none}
+#board.over{box-shadow:0 0 0 3px var(--accent-soft)}
+.axis-x,.axis-y{position:absolute;background:var(--muted);opacity:.8;pointer-events:none}
+.axis-x{left:0;right:0;top:50%;height:1.5px;transform:translateY(-.75px)}
+.axis-y{top:0;bottom:0;left:50%;width:1.5px;transform:translateX(-.75px)}
+.chip{position:relative;display:inline-grid;place-items:center;min-width:46px;height:36px;padding:0 10px;border-radius:999px;border:0;
+  font-family:var(--f-display);font-weight:800;font-size:.95rem;cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 1px 2px rgba(0,0,0,.2),0 4px 12px rgba(0,0,0,.14)}
+.chip:active{cursor:grabbing}
+#board .chip{position:absolute;transform:translate(-50%,-50%);z-index:2}
+#board .chip.sel{transform:translate(-50%,-50%) scale(1.14);z-index:4}
+.tray .chip.sel{transform:scale(1.1)}
+.chip.sel{outline:2px solid var(--ink);outline-offset:3px}
+.chip[data-band="cold"]{box-shadow:0 0 0 3px var(--surface),0 0 0 6px var(--t-cold),0 4px 12px rgba(0,0,0,.14)}
+.chip[data-band="luke"]{box-shadow:0 0 0 3px var(--surface),0 0 0 6px var(--t-luke),0 4px 12px rgba(0,0,0,.14)}
+.chip[data-band="warm"]{box-shadow:0 0 0 3px var(--surface),0 0 0 6px var(--t-warm),0 4px 12px rgba(0,0,0,.14)}
+.pulse{position:absolute;width:58px;height:58px;border-radius:50%;border:3px solid var(--c);transform:translate(-50%,-50%);opacity:0;pointer-events:none;z-index:1}
+.flag{position:absolute;padding:4px 10px;border-radius:999px;background:var(--c);font-size:.74rem;font-weight:700;white-space:nowrap;pointer-events:none;z-index:6;transform:translate(-50%,calc(-100% - 26px));box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.check-msg{font-size:.9rem;color:var(--muted);flex-basis:100%}
+.check-msg:empty{display:none}
+@media (prefers-reduced-motion:no-preference){
+  #board .chip.landed{animation:land .28s ease-out}
+  #board .chip.revealed{animation:pop .5s ease-out}
+  .pulse{animation:pulse .9s ease-out forwards}
+  .flag{animation:flag 2.6s ease forwards}
+}
+@media (prefers-reduced-motion:reduce){ .pulse{display:none} }
+@keyframes land{from{transform:translate(-50%,-50%) scale(1.2)}to{transform:translate(-50%,-50%) scale(1)}}
+@keyframes pop{0%{transform:translate(-50%,-50%) scale(1)}40%{transform:translate(-50%,-50%) scale(1.3)}100%{transform:translate(-50%,-50%) scale(1)}}
+@keyframes pulse{0%{opacity:.95;transform:translate(-50%,-50%) scale(.6)}100%{opacity:0;transform:translate(-50%,-50%) scale(2.3)}}
+@keyframes flag{0%{opacity:0;transform:translate(-50%,calc(-100% - 14px))}12%{opacity:1;transform:translate(-50%,calc(-100% - 26px))}82%{opacity:1}100%{opacity:0}}
+/* begreber */
+.defs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:20px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+@media (max-width:760px){ .defs{grid-template-columns:1fr} }
+.defs>div{display:grid;gap:10px;align-content:start;min-width:0}
+.defs h3{font-size:1.05rem}
+.defs .side{display:grid;gap:4px;padding:10px 12px;border-radius:10px;background:var(--sunk)}
+.defs .side b{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}
+.defs ul{margin:0;padding-left:18px;display:grid;gap:3px;font-size:.92rem}
+.defs .note{grid-column:1/-1;font-size:.9rem;color:var(--muted)}
+/* blokke */
+.blocs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:640px){ .blocs{gap:8px} .bzone{padding:10px 8px;min-height:180px} .bz-h{font-size:.9rem} .bz-chips{gap:8px} }
+.bzone{display:grid;align-content:start;gap:10px;min-height:150px;padding:14px;border:2px dashed var(--line);border-radius:var(--r);background:var(--surface);text-align:left;cursor:pointer;font:inherit;color:inherit}
+.bzone.red{background:var(--bz-red);border-color:var(--bz-red-line)}
+.bzone.blue{background:var(--bz-blue);border-color:var(--bz-blue-line)}
+.bzone.armed{border-style:solid;box-shadow:0 0 0 3px var(--accent-soft)}
+.bzone.over{border-style:solid;border-color:var(--accent)}
+.bz-h{font-family:var(--f-display);font-weight:800;font-size:1.05rem}
+.bz-chips{display:flex;flex-wrap:wrap;gap:10px;min-height:40px}
+.bchip.ok{box-shadow:0 0 0 3px var(--surface),0 0 0 6px var(--t-hit),0 4px 12px rgba(0,0,0,.14)}
+.bchip.no{box-shadow:0 0 0 3px var(--surface),0 0 0 6px var(--bad),0 4px 12px rgba(0,0,0,.14)}
+.bfb{display:grid;gap:8px;padding:14px 16px;border-radius:var(--r);background:var(--surface);border:1px solid var(--line)}
+.bfb ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.t-peek{font-size:.85rem;color:var(--muted);padding:8px 12px;border:1px dashed var(--line);border-radius:8px;margin-bottom:12px}
+.agree{display:grid;gap:14px}
+.agree>*{min-width:0}
+#btray:empty::after{content:"Alle partier er placeret i en blok."}
+.agree-pick{display:flex;flex-wrap:wrap;gap:8px}
+.agree-pick .badge{border:0;cursor:pointer;min-width:44px;height:36px;font-size:.85rem;opacity:.55}
+.agree-pick .badge[aria-pressed="true"]{opacity:1;outline:2px solid var(--ink);outline-offset:2px}
+.agree-topics{display:grid;gap:8px}
+.agree-topics .row{display:flex;flex-wrap:wrap;gap:6px}
+.tchip{border:1px solid var(--line);border-radius:999px;background:var(--surface);color:inherit;padding:7px 13px;font:inherit;font-size:.85rem;line-height:1.2;cursor:pointer}
+.tchip:hover{border-color:var(--accent);background:var(--accent-soft)}
+.tchip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.tnote{padding:10px 14px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0;font-size:.9rem;display:grid;gap:4px}
+.abar .v.na{color:var(--muted);font-size:.78rem}
+.exl{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:10px}
+.exl li{padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);display:grid;gap:6px}
+.exl .d{font-size:.76rem;color:var(--muted)}
+.exl .vr{display:flex;flex-wrap:wrap;gap:4px;align-items:center;font-size:.8rem}
+.exl .vr>span:first-child{min-width:58px;color:var(--muted)}
+.mini{display:inline-block;padding:1px 6px;border-radius:4px;font-family:var(--f-mono);font-size:.72rem;font-weight:700;line-height:1.5}
+.mini.me{outline:2px solid var(--ink);outline-offset:1px}
+.abars{display:grid;gap:6px}
+.abar{display:grid;grid-template-columns:44px minmax(0,1fr) 46px;gap:10px;align-items:center;font-size:.9rem}
+.abar .tr{height:14px;border-radius:4px;background:var(--sunk);overflow:hidden}
+.abar .tr i{display:block;height:100%;border-radius:0 4px 4px 0}
+.abar .v{font-family:var(--f-mono);text-align:right;font-variant-numeric:tabular-nums}
+@media (max-width:480px){ .abar{grid-template-columns:40px minmax(0,1fr) 42px;font-size:.82rem} }
+.hm-wrap{overflow-x:auto}
+.hm{border-collapse:separate;border-spacing:2px;font-family:var(--f-mono);font-size:.74rem;font-variant-numeric:tabular-nums}
+.hm th{font-weight:700;padding:4px 6px;color:var(--muted);white-space:nowrap}
+.hm td{min-width:38px;height:30px;text-align:center;border-radius:4px}
+.hm td.self{background:transparent;color:var(--muted)}
+.insights{margin:0;padding-left:18px;display:grid;gap:8px}
+.src{font-size:.82rem;color:var(--muted)}
+#teachsrc{gap:12px}
+#pquiz{scroll-margin-top:16px}
+.done-note{align-self:center;font-weight:500;color:var(--good)}
+#pquiz .nextbar{align-items:center}
+.srct{border-collapse:collapse;font-size:.88rem;font-variant-numeric:tabular-nums;min-width:420px}
+.srct th{text-align:left;font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);padding:6px 10px;border-bottom:1px solid var(--line)}
+.srct td{padding:6px 10px;border-bottom:1px solid var(--line);font-family:var(--f-mono)}
+/* folketingssal */
+.p-top{display:flex;justify-content:space-between;gap:16px 24px;flex-wrap:wrap;align-items:center}
+.hemi-wrap{margin:0;display:grid;gap:2px;justify-items:center}
+.hemi{width:190px;max-width:100%;height:auto;display:block}
+.hemi-wrap figcaption{font-size:.76rem;color:var(--muted)}
+.chip[data-band="hit"]{cursor:default}
+.chip[data-band="hit"]::after{content:"✓";position:absolute;top:-9px;right:-8px;width:20px;height:20px;border-radius:50%;background:var(--t-hit);color:var(--on-band);border:2px solid var(--surface);font-size:.7rem;display:grid;place-items:center;font-family:var(--f-body)}
+.chip.lifting{opacity:.3}
+.chip.dragging{position:fixed;z-index:50;pointer-events:none;transform:translate(-50%,-50%) scale(1.12);box-shadow:0 8px 22px rgba(0,0,0,.28)}
+.model{position:absolute;transform:translate(-50%,-50%);pointer-events:none;z-index:1;width:20px;height:20px;border-radius:50%;border:3px dashed var(--ink);opacity:.9}
+.model b{position:absolute;left:50%;top:100%;transform:translateX(-50%);font-family:var(--f-mono);font-size:.7rem;font-weight:700;color:var(--ink);white-space:nowrap}
+@media (max-width:480px){ .chip{min-width:36px;height:28px;padding:0 7px;font-size:.78rem} .ax{font-size:.62rem} .compass{padding:8px;gap:6px} }
+
+.panel{display:grid;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;box-shadow:var(--shadow)}
+.pp-head{display:flex;gap:12px;align-items:center}
+.therm{display:grid;gap:6px}
+.therm-bar{position:relative;height:12px;border-radius:6px;background:linear-gradient(90deg,var(--t-cold),var(--t-luke) 40%,var(--t-warm) 66%,var(--t-hit) 92%)}
+.therm-bar i{position:absolute;top:50%;width:20px;height:20px;border-radius:50%;background:var(--surface);border:3px solid var(--ink);transform:translate(-50%,-50%)}
+.therm-labels{display:grid;grid-template-columns:repeat(4,1fr);font-size:.7rem;color:var(--muted);text-align:center;letter-spacing:.03em}
+.status{font-weight:700}
+.hint{display:grid;gap:12px;padding:14px;border-radius:10px;background:var(--sunk)}
+.ref{display:grid;gap:4px;padding-top:12px;border-top:1px solid var(--line);font-size:.9rem}
+.ref:first-of-type{border-top:0;padding-top:0}
+.ref .q2{color:var(--muted)}
+.ref .ans{font-weight:500}
+.legend{display:grid;gap:8px;font-size:.88rem}
+.legend div{display:flex;align-items:center;gap:10px}
+.legend i{width:16px;height:16px;border-radius:50%;border:3px solid;display:inline-block;flex:none}
+.done-banner{padding:18px 20px;border-radius:var(--r);background:var(--good-soft);border:1px solid var(--good);display:grid;gap:10px}
+details.note{font-size:.9rem;color:var(--muted);max-width:72ch}
+details.note summary{cursor:pointer;font-weight:500;color:var(--ink)}
+
+/* attempt score */
+.scorebar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+.stats{display:flex;gap:22px;flex-wrap:wrap}
+.stat{display:grid;gap:0}
+.stat .v{font-family:var(--f-mono);font-weight:700;font-size:1.5rem;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat .l{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+@media (prefers-reduced-motion:no-preference){ .chip{transition:transform .12s,box-shadow .15s} .therm-bar i{transition:left .35s ease} }
+</style>
+</head>
+<body>
+<div class="wrap" lang="da">
+  <header>
+    <span class="eyebrow">Samfundsfag B/A · Folketinget efter valget 24. marts 2026</span>
+    <div class="brand"><svg class="mark" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#1D3E5E"/><circle cx="32" cy="32" r="24.5" fill="none" stroke="#F4F1EA" stroke-width="2" opacity=".55"/><path d="M32 6v52M6 32h52" stroke="#F4F1EA" stroke-width="2.6" stroke-linecap="round" opacity=".5"/><polygon points="15.74,15.74 38.01,25.99 25.99,38.01" fill="#D6243A"/><polygon points="48.26,48.26 38.01,25.99 25.99,38.01" fill="#5B9BEA"/><circle cx="32" cy="32" r="4" fill="#F4F1EA"/><circle cx="32" cy="32" r="1.6" fill="#1D3E5E"/></svg><h1>Det politiske kompas</h1></div>
+    <p class="lede">Lær forskellen på fordelingspolitik og værdipolitik, undersøg hvad Folketingets 12 partier går op i, find ud af, hvem der samarbejder med hvem, og placér dem til sidst i kompasset med så få forsøg som muligt.</p>
+    <p class="byline">Udviklet af <b>Bonnie Kjeldgaard-Christiansen, Haderslev Katedralskole</b></p>
+    <nav class="steps" aria-label="Dele">
+      <button class="step" data-go="1"><span class="top"><span class="t">1 · Begreberne</span><span class="c mono" id="c1"></span></span><span class="bar"><i id="b1"></i></span></button>
+      <button class="step" data-go="2"><span class="top"><span class="t">2 · Partierne</span><span class="c mono" id="c2"></span></span><span class="bar"><i id="b2"></i></span></button>
+      <button class="step" data-go="3"><span class="top"><span class="t">3 · Blokkene</span><span class="c mono" id="c3"></span></span><span class="bar"><i id="b3"></i></span></button>
+      <button class="step" data-go="4"><span class="top"><span class="t">4 · Kompasset</span><span class="c mono" id="c4"></span></span><span class="bar"><i id="b4"></i></span></button>
+    </nav>
+  </header>
+
+  <!-- PART 1 -->
+  <section class="part" id="p1" hidden>
+    <div class="intro">
+      <h2>Fordelingspolitik og værdipolitik</h2>
+      <p class="muted">Start med de to begreber. Svar på spørgsmålene, og sortér derefter de politiske emner efter, hvilken akse de hører til.</p>
+    </div>
+    <div class="block">
+      <div class="block-head"><h3>Hvad betyder begreberne?</h3><span class="score" id="s1a"></span></div>
+      <div id="concepts"></div>
+    </div>
+    <div class="block">
+      <div class="block-head"><h3>Fordelingspolitik, værdipolitik eller begge dele?</h3><span class="score" id="s1b"></span></div>
+      <p class="muted">Hvilken akse handler uenigheden først og fremmest om? Nogle emner rammer begge akser.</p>
+      <div class="sort" id="sort"></div>
+    </div>
+    <div class="nextbar"><p class="locknote" role="status"></p><button class="btn ghost teacher-only" data-reset="1">Nulstil del 1</button><button class="btn" data-go="2">Videre til partierne</button></div>
+  </section>
+
+  <!-- PART 2 -->
+  <section class="part" id="p2" hidden>
+    <div class="intro">
+      <h2>Hvad går partierne op i?</h2>
+      <p class="muted">Vælg et parti og besvar fem spørgsmål om partiets syn på ulighed og skat (fordelingspolitik) og på klima og miljø, EU og ligestilling (værdipolitik). Det, du lærer her, skal du bruge, når du placerer partierne i kompasset. Husk, at udlændingepolitik også er værdipolitik og fylder meget, når partierne placeres.</p>
+    </div>
+    <div><button class="btn ghost" data-defs aria-expanded="false">Husk begreberne</button></div>
+    <div class="defs" hidden></div>
+    <div class="party-grid" id="pgrid"></div>
+    <div class="block" id="pquiz"></div>
+    <div class="nextbar"><p class="locknote" role="status"></p><button class="btn ghost teacher-only" data-reset="2">Nulstil del 2</button><button class="btn" data-go="3">Videre til blokkene</button></div>
+  </section>
+
+  <!-- PART 3: BLOKKE -->
+  <section class="part" id="p3" hidden>
+    <div class="intro">
+      <h2>Hvem samarbejder med hvem?</h2>
+      <p class="muted">Placér hvert parti i den blok, det hører til efter valget i 2026: rød blok, midten eller blå blok. Træk partiet over i en blok, eller tryk på partiet og derefter på blokken. Tryk på <b>Tjek blokkene</b>, når alle 12 er placeret.</p>
+    </div>
+    <div class="tray-wrap"><span class="eyebrow">Ikke placeret</span><div class="tray" id="btray" aria-label="Partier der ikke er placeret i en blok"></div></div>
+    <div class="blocs" id="blocs">
+      <div class="bzone red" data-zone="R" role="button" tabindex="0" aria-label="Rød blok"><span class="bz-h">Rød blok</span><span class="bz-chips"></span></div>
+      <div class="bzone mid" data-zone="M" role="button" tabindex="0" aria-label="Midten"><span class="bz-h">Midten</span><span class="bz-chips"></span></div>
+      <div class="bzone blue" data-zone="B" role="button" tabindex="0" aria-label="Blå blok"><span class="bz-h">Blå blok</span><span class="bz-chips"></span></div>
+    </div>
+    <div class="scorebar">
+      <p class="check-msg" id="bmsg" role="status" style="flex-basis:auto"></p>
+      <div class="actions"><button class="btn" id="bcheck">Tjek blokkene</button><button class="btn ghost teacher-only" data-reset="b">Nulstil blokkene</button></div>
+    </div>
+    <div id="bfeedback"></div>
+    <div id="bstats"></div>
+    <p class="src teacher-only">Lærervisning: Facit er rød blok: S, SF, EL og ALT. Midten: M. Blå blok: V, K, LA, DD, DF og BP. RV godkendes både i rød blok og på midten.</p>
+    <div class="nextbar"><p class="locknote" role="status"></p><button class="btn" data-go="4">Videre til kompasset</button></div>
+  </section>
+
+  <!-- PART 4 -->
+  <section class="part" id="p4" hidden>
+    <div class="intro">
+      <h2>Placér partierne</h2>
+      <p class="muted">Træk partierne ind i kompasset, eller tryk på et parti og derefter et sted i kompasset. <span class="kbd-hint">Med tastaturet: tryk Enter på et parti for at sætte det i midten, og flyt det med piletasterne (Skift giver store skridt).</span> Hvert parti, du tjekker, tæller som ét forsøg. Målet er at få alle 12 godkendt på så få forsøg som muligt. Rammer du alle partier første gang, bruger du 12 forsøg, hvilket er det færrest mulige.</p>
+    </div>
+    <div class="scorebar">
+      <div class="stats">
+        <div class="stat"><span class="v" id="st-tries">0</span><span class="l">Forsøg i alt</span></div>
+        <div class="stat"><span class="v" id="st-hit">0/12</span><span class="l">Godkendt</span></div>
+        <div class="stat" title="Ét forsøg pr. parti, hvis alle 12 placeres rigtigt første gang"><span class="v">12</span><span class="l">Færrest mulige forsøg</span></div>
+      </div>
+      <div class="actions"><button class="btn" id="check">Tjek placeringer</button><button class="btn ghost" data-defs aria-expanded="false">Husk begreberne</button><button class="btn ghost teacher-only" id="t-model2">Vis rigtige placeringer</button><button class="btn ghost teacher-only" data-reset="3">Nulstil kompasset</button></div>
+      <p class="check-msg" id="check-msg" role="status"></p>
+    </div>
+    <div class="defs" hidden></div>
+    <div class="tray-wrap"><span class="eyebrow">Ikke placeret</span><div class="tray" id="tray" aria-label="Partier der ikke er placeret"></div></div>
+    <div class="compass-layout">
+      <div class="compass">
+        <div class="ax ax-top">Værdipolitisk venstreorienteret</div>
+        <div class="ax ax-left">Fordelingspolitisk venstre</div>
+        <div id="board" aria-label="Det politiske kompas"><div class="qt a"></div><div class="qt b"></div><div class="axis-x"></div><div class="axis-y"></div><div class="origin"></div><i class="ah l"></i><i class="ah r"></i><i class="ah u"></i><i class="ah d"></i></div>
+        <div class="ax ax-right">Fordelingspolitisk højre</div>
+        <div class="ax ax-bottom">Værdipolitisk højreorienteret</div>
+      </div>
+      <aside class="panel" id="panel" aria-live="polite"></aside>
+    </div>
+    <div id="donebox"></div>
+    <details class="note">
+      <summary>Om afstandsmåleren og pointene</summary>
+      <p style="margin-top:8px">Hvert parti har en modelplacering, der bygger på, hvordan en række samfundsfagslærere har placeret partierne (FALS-modellen 2026). Placeringen godkendes, når den ligger inden for et område omkring modelplaceringen, fordi partiernes præcise placering altid kan diskuteres. Kold, lunken og varm viser afstanden til området, ikke retningen. Hvert parti, der tjekkes, tæller ét forsøg, så 12 forsøg er det færrest mulige. Når alle partier er godkendt, kan du sammenligne med modellen.</p>
+    </details>
+    <div class="block teacher-only" id="teachsrc"></div>
+  </section>
+
+  <footer>
+    <p class="credit">Det politiske kompas er udviklet af Bonnie Kjeldgaard-Christiansen, Haderslev Katedralskole, til undervisning i samfundsfag. Siden er bygget i samarbejde med Claude, en AI-model fra Anthropic.</p>
+    <details class="note teacher-box">
+      <summary>For lærere</summary>
+      <div id="teacher"></div>
+    </details>
+  </footer>
+</div>
+
+<script>
+/* ---------- DATA ---------- */
+const CONCEPTS=[
+ {q:"Hvad handler fordelingspolitik grundlæggende om?",o:["Hvordan økonomiske goder fordeles via skat, ydelser og velfærd","Hvilke normer og værdier der skal præge fællesskabet i samfundet","Hvordan mandaterne i Folketinget fordeles efter et valg","Hvordan opgaverne fordeles mellem stat, regioner og kommuner"],c:0,
+  e:"Fordelingspolitik er den økonomiske konfliktlinje: Hvor meget skal staten omfordele, hvor stor skal den offentlige sektor være, og hvor meget skal markedet styre? <b>Fordelingspolitisk venstre</b> betyder mere omfordeling og en større offentlig sektor. <b>Fordelingspolitisk højre</b> betyder lavere skat og mere marked."},
+ {q:"Hvad handler værdipolitik grundlæggende om?",o:["Hvor høj skatten bør være for de forskellige indkomstgrupper","Holdninger til fx udlændinge, straf, klima og EU","Hvor mange penge staten skal bruge på velfærd og overførsler","Partiernes interne værdigrundlag, vedtægter og principper"],c:1,
+  e:"Værdipolitik handler om, hvilke værdier og normer samfundet skal bygge på. <b>Værdipolitisk venstreorienterede</b> lægger vægt på fx en lempelig udlændingepolitik, grøn omstilling, internationalt samarbejde og resocialisering. <b>Værdipolitisk højreorienterede</b> lægger vægt på fx en stram udlændingepolitik, nationalt fællesskab, lov og orden og national selvbestemmelse."},
+ {q:"Hvorfor bruger man et kompas med to akser i stedet for én venstre–højre-akse?",o:["Der er to blokke i Folketinget, som skal kunne vises","Regering og opposition skal kunne skelnes fra hinanden","Et parti kan stå forskellige steder på de to akser","Værdipolitik er kun relevant for partierne på højrefløjen"],c:2,
+  e:"Dansk Folkeparti har fx fordelingspolitisk ligget tæt på midten med fokus på ældre og velfærd, men værdipolitisk langt til højre. Radikale Venstre ligger også tæt på midten fordelingspolitisk, men langt til venstre værdipolitisk. Én akse kan ikke vise den forskel."},
+ {q:"Hvorfor er værdipolitikken blevet vigtigere i dansk politik siden 1970'erne?",o:["Fordelingspolitikken forsvandt, da velfærdsstaten var bygget","Nye konfliktlinjer som miljø, indvandring og EU er kommet til","Alle partier er i dag enige om skat og offentlig velfærd","Folketinget fik flere mandater og dermed flere små partier"],c:1,
+  e:"Man taler om <b>ny politik</b> (værdipolitik) ved siden af <b>gammel politik</b> (fordelingspolitik). Fordelingspolitikken er ikke forsvundet, men mange vælgere vælger parti ud fra værdipolitiske spørgsmål som udlændinge og klima. Derfor kan vælgere krydse den klassiske grænse mellem rød og blå blok."}
+];
+const SORT=[
+ {t:"Skal topskatten sænkes?",a:"F",e:"Skat på de højeste indkomster handler om, hvor meget der omfordeles. Det er klassisk fordelingspolitik."},
+ {t:"Hvor længe skal ledige kunne modtage dagpenge?",a:"F",e:"Dagpenge er en overførselsindkomst. Uenigheden handler om økonomisk tryghed over for, at det skal kunne betale sig at arbejde."},
+ {t:"Skal private virksomheder kunne drive plejehjem og tjene penge på det?",a:"F",e:"Spørgsmålet handler om stat over for marked i velfærden. Det hører til fordelingspolitikken."},
+ {t:"Skal folkepensionsalderen fortsat stige i takt med levealderen?",a:"F",e:"Pensionsalderen afgør, hvem der modtager offentlige ydelser, og hvor mange der arbejder og betaler skat."},
+ {t:"Skal boafgiften ved arv sænkes?",a:"F",e:"Afgiften på arv handler om, hvor meget formue der omfordeles via staten."},
+ {t:"Hvor mange kvoteflygtninge skal Danmark tage imod?",a:"V",e:"Flygtninge- og udlændingepolitik er den vigtigste værdipolitiske konfliktlinje i dansk politik."},
+ {t:"Skal straffene for bandekriminalitet skærpes yderligere?",a:"V",e:"Retspolitik handler om synet på straf, tryghed og resocialisering. Det er værdipolitik."},
+ {t:"Hvilke krav skal man opfylde for at få dansk indfødsret?",a:"V",e:"Indfødsret handler om nationalt fællesskab og om, hvem der hører til. Det er værdipolitik."},
+ {t:"Skal Danmark give EU mere magt over danske love?",a:"V",e:"EU-spørgsmålet handler om national selvbestemmelse over for internationalt samarbejde."},
+ {t:"Skal politiet have flere muligheder for overvågning, fx ansigtsgenkendelse?",a:"V",e:"Uenigheden handler om afvejningen mellem tryghed og borgernes frihedsrettigheder."},
+ {t:"Skal det fortsat være forbudt at dække ansigtet til i det offentlige rum, fx med burka eller niqab?",a:"V",e:"Spørgsmålet handler om religion, kultur og national identitet. Det er værdipolitik."},
+ {t:"Skal der indføres en CO2-afgift på landbruget?",a:"B",e:"Begge dele. Redskabet er en afgift, og der er uenighed om, hvem der skal betale (fordelingspolitik). Men motivet og konflikten handler om klima og grøn omstilling (værdipolitik)."},
+ {t:"Skal man have boet i Danmark i en årrække for at kunne få fuld kontanthjælp?",a:"B",e:"Begge dele. Det handler om størrelsen af en overførselsindkomst (fordelingspolitik), men uenigheden drives især af synet på udlændinge og integration (værdipolitik)."}
+];
+const LBL={F:"Fordelingspolitik",V:"Værdipolitik",B:"Begge dele"};
+const AX={F:"Fordelingspolitik",V:"Værdipolitik"};
+
+/* x: fordelingspolitik -10 venstre .. 10 højre. y: værdipolitik -10 venstreorienteret (top) .. 10 højreorienteret (bund) */
+const PARTIES=[
+ {id:"S",name:"Socialdemokratiet",lead:"Mette Frederiksen",seats:38,role:"Regering",col:"#C8102E",x:-1.5,y:2.5,qs:[
+  {a:"F",th:"Ulighed",q:"Hvordan ser Socialdemokratiet på økonomisk ulighed?",o:["Uligheden skal ned, men alle der kan, skal arbejde", "Ulighed er ikke et problem, hvis alle bliver rigere", "Uligheden skal ned ved at sænke skatten for de rigeste"],c:0,e:"S vil mindske uligheden, men lægger vægt på, at alle der kan, skal arbejde. Velfærd og fx ret til tidlig pension for nedslidte skal give tryghed. Det placerer S til venstre fordelingspolitisk, men ikke yderst."},
+  {a:"F",th:"Skat",q:"Hvad vil Socialdemokratiet typisk med skatten?",o:["Afskaffe topskatten og sænke skatten for alle", "De rigeste skal betale mere, fx med en ny formueskat", "Indføre en flad skat, hvor alle betaler det samme"],c:1,e:"S mener, at de bredeste skuldre skal bære mest, og gik til valg i 2026 på en ny formueskat for den rigeste ene procent af danskerne. Det trækker S til venstre fordelingspolitisk."},
+  {a:"V",th:"Klima og miljø",q:"Hvordan ser Socialdemokratiet på klima- og miljøpolitikken?",o:["Klimamålene er for høje og skal sænkes", "Høje klimamål, men uden at ramme almindelige familier hårdt", "Klimaet skal reddes, uanset hvad det koster"],c:1,e:"S står bag klimaloven med målet om at skære udledningen af drivhusgasser med 70 procent i 2030 i forhold til 1990, men vil have en grøn omstilling, der ikke rammer almindelige lønmodtagere urimeligt hårdt."},
+  {a:"V",th:"EU",q:"Hvordan forholder Socialdemokratiet sig til EU?",o:["Danmark skal melde sig ud af EU", "Tæt samarbejde med EU, men pas på den danske model", "EU skal bestemme mere, fx over skat og velfærd"],c:1,e:"S anbefalede et ja til at afskaffe forsvarsforbeholdet i 2022 og går ind for et tæt EU-samarbejde. Samtidig vil S beskytte den danske arbejdsmarkedsmodel mod EU-regler, fx om mindsteløn. Bemærk: S fører en stram udlændingepolitik. Det trækker S mod værdipolitisk højre, selvom partiet er grønt og EU-venligt."},
+  {a:"V",th:"Ligestilling",q:"Hvad mener Socialdemokratiet om ligestilling?",o:["Fædre skal have øremærket barsel, så barslen deles mere lige", "Familien skal selv fordele al barslen", "Ligestilling er ikke noget, politikerne skal blande sig i"],c:0,e:"Det var en S-regering, der fik flertal for øremærket barsel til fædre, som trådte i kraft i 2022. S ser det som et skridt mod mere ligestilling."}]},
+ {id:"SF",name:"SF – Socialistisk Folkeparti",lead:"Pia Olsen Dyhr",seats:20,role:"Regering",col:"#D9367C",x:-4.5,y:-4,qs:[
+  {a:"F",th:"Ulighed",q:"Hvordan ser SF på økonomisk ulighed?",o:["Uligheden er for stor, og børnefattigdom skal bekæmpes", "Uligheden er fin, fordi den skaber vækst og nye job", "Uligheden skal ned ved at sænke skatten for alle grupper"],c:0,e:"SF mener, at uligheden er blevet for stor, og har særligt fokus på børnefattigdom, fx med bedre ydelser til de fattigste børnefamilier. Det trækker SF til venstre fordelingspolitisk."},
+  {a:"F",th:"Skat",q:"Hvad vil SF typisk med skatten?",o:["De rigeste skal betale mere i skat", "Topskatten skal afskaffes", "Alle skal betale den samme skatteprocent"],c:0,e:"SF vil have de rigeste til at betale mere, fx gennem højere skat på store formuer eller mindre fradrag for renter på store lån, og bruge pengene på velfærd og grøn omstilling."},
+  {a:"V",th:"Klima og miljø",q:"Hvordan ser SF på klima- og miljøpolitikken?",o:["Klimaet er vigtigt, men landbruget skal ikke betale", "Klima og natur er en af partiets vigtigste sager", "Danmark skal vente på, at andre lande går forrest"],c:1,e:"SF har gjort klima og natur til en hovedsag og vil fx have mere vild natur og et grønnere landbrug. En grøn profil trækker mod værdipolitisk venstre."},
+  {a:"V",th:"EU",q:"Hvordan forholder SF sig til EU?",o:["Danmark skal melde sig ud af EU", "EU er vigtigt for at løse fx klimakrisen", "EU skal kun handle om handel"],c:1,e:"SF var tidligere EU-kritisk, men ser i dag EU som et vigtigt redskab til at løse grænseoverskridende problemer som klima og skattely. SF anbefalede et ja til at afskaffe forsvarsforbeholdet i 2022."},
+  {a:"V",th:"Ligestilling",q:"Hvad mener SF om ligestilling?",o:["Familien skal selv bestemme, hvem der tager barslen", "Mere øremærket barsel til fædre og lige løn", "Ligestilling er allerede opnået"],c:1,e:"SF har ligestilling som en kernesag og går ind for mere øremærket barsel til fædre, ligeløn og en indsats mod sexisme. Det trækker mod værdipolitisk venstre."}]},
+ {id:"EL",name:"Enhedslisten",lead:"Pelle Dragsted",seats:11,role:"Støtteparti",col:"#8E1B3D",x:-8,y:-8,qs:[
+  {a:"F",th:"Ulighed",q:"Hvordan ser Enhedslisten på økonomisk ulighed?",o:["Uligheden skal ned, fx med højere ydelser til de fattigste", "Uligheden skal ned ved at sænke skatten for alle", "Ulighed er ikke et problem i Danmark"],c:0,e:"Kampen mod ulighed og fattigdom er Enhedslistens kerne. Partiet vil hæve de laveste ydelser og omfordele mere end noget andet parti i Folketinget."},
+  {a:"F",th:"Skat",q:"Hvad vil Enhedslisten typisk med skatten?",o:["Sænke skatten for alle, også de rigeste", "Indføre en formueskat", "Afskaffe topskatten og sænke selskabsskatten"],c:1,e:"Enhedslisten vil indføre en formueskat og have de rigeste og de største virksomheder til at betale mere i skat. Det placerer partiet længst til venstre fordelingspolitisk."},
+  {a:"V",th:"Klima og miljø",q:"Hvordan ser Enhedslisten på klima- og miljøpolitikken?",o:["De rige og de store forurenere skal betale", "Klimamålene skal sænkes for at redde arbejdspladser", "Almindelige forbrugere skal betale for omstillingen"],c:0,e:"Enhedslisten vil have en hurtig grøn omstilling og mener, at regningen skal betales af de rigeste og de største forurenere, ikke af almindelige mennesker."},
+  {a:"V",th:"EU",q:"Hvordan forholder Enhedslisten sig til EU?",o:["EU skal have meget mere magt over dansk politik", "EU tager for lidt hensyn til løn og velfærd", "Danmark skal hurtigst muligt indføre euroen som mønt"],c:1,e:"Enhedslisten er EU-kritisk og mener, at EU sætter det fælles marked over velfærd, miljø og lønmodtagernes rettigheder. Bemærk: Kritikken kommer fra venstre og handler ikke om national identitet, som hos fx DF."},
+  {a:"V",th:"Ligestilling",q:"Hvad mener Enhedslisten om ligestilling?",o:["Kvindefag som pædagog og sygeplejerske skal have højere løn", "Øremærket barsel er en dårlig idé", "Lønforskelle mellem mænd og kvinder er ikke et problem"],c:0,e:"Enhedslisten vil have ligeløn og mener, at fag med mange kvinder, fx pædagoger og sygeplejersker, er underbetalt. Partiet støtter også øremærket barsel."}]},
+ {id:"ALT",name:"Alternativet",lead:"Franciska Rosenkilde",seats:5,role:"Støtteparti",col:"#2F8A3F",x:-4.5,y:-8,qs:[
+  {a:"F",th:"Ulighed",q:"Hvordan ser Alternativet på økonomisk ulighed?",o:["Uligheden skal ned, fx med forsøg med borgerløn", "Ulighed er nødvendig for at skabe vækst", "Velgørenhed skal klare uligheden, ikke staten"],c:0,e:"Alternativet vil mindske uligheden og har foreslået forsøg med basisindkomst (borgerløn). Partiet vil også gøre op med, at velstand kun måles i økonomisk vækst."},
+  {a:"F",th:"Skat",q:"Hvad vil Alternativet typisk med skatten?",o:["Det skal være dyrere at forurene, fx med grønne afgifter", "Benzin og flyrejser skal være billigere", "Alle skal betale den samme skatteprocent"],c:0,e:"Alternativet vil have en grøn skattereform, hvor det bliver dyrere at forurene, og hvor de rigeste bidrager mere. Fordelingspolitisk placerer det partiet til venstre."},
+  {a:"V",th:"Klima og miljø",q:"Hvordan ser Alternativet på klima- og miljøpolitikken?",o:["Klima og natur er vigtigere end økonomisk vækst", "Klimapolitik må aldrig koste arbejdspladser", "Ny teknologi løser klimaproblemet af sig selv"],c:0,e:"Klima, natur og dyrevelfærd er Alternativets vigtigste sager. Partiet mener, at økonomien skal indrettes inden for naturens grænser. Det trækker langt mod værdipolitisk venstre."},
+  {a:"V",th:"EU",q:"Hvordan forholder Alternativet sig til EU?",o:["Positiv: EU skal være grønnere og mere demokratisk", "Kritisk: Danmark skal melde sig helt ud af EU og klare sig selv", "Kritisk: EU skal stoppe med at lave regler om klima og miljø"],c:0,e:"Alternativet er positiv over for EU-samarbejdet, især når det gælder klima og miljø, men vil have et grønnere og mere demokratisk EU."},
+  {a:"V",th:"Ligestilling",q:"Hvad mener Alternativet om ligestilling?",o:["Lige rettigheder for alle køn og seksualiteter", "Traditionelle kønsroller skal styrkes i skolen og familien", "Ligestilling er ikke længere en vigtig sag i Danmark"],c:0,e:"Alternativet lægger vægt på mangfoldighed og lige rettigheder for alle køn og seksualiteter og støtter øremærket barsel. Det trækker mod værdipolitisk venstre."}]},
+ {id:"RV",name:"Radikale Venstre",lead:"Martin Lidegaard",seats:10,role:"Regering",col:"#5E2A7E",x:1.5,y:-7,qs:[
+  {a:"F",th:"Ulighed",q:"Hvordan ser Radikale Venstre på økonomisk ulighed?",o:["Højere ydelser er den bedste vej mod mindre ulighed", "Uddannelse og job er den bedste vej mod mindre ulighed", "Ulighed er ikke noget, politikerne skal blande sig i"],c:1,e:"Radikale Venstre mener, at uddannelse og at flere kommer i arbejde er den bedste vej til mindre ulighed, og støtter derfor også reformer, der er upopulære på venstrefløjen. Fordelingspolitisk ligger partiet tæt på midten."},
+  {a:"F",th:"Skat",q:"Hvad vil Radikale Venstre typisk med skatten?",o:["Lavere skat på arbejde og højere afgifter på forurening", "Højere skat på arbejde for de højtlønnede", "Lavere afgifter på benzin og diesel"],c:0,e:"Radikale Venstre vil have, at det kan betale sig at arbejde og uddanne sig, og har peget på at sænke skatten på arbejde og i stedet gøre det dyrere at forurene."},
+  {a:"V",th:"Klima og miljø",q:"Hvordan ser Radikale Venstre på klima- og miljøpolitikken?",o:["En høj CO2-afgift, også på landbruget", "Klimapolitikken skal skrues ned af hensyn til bilisterne", "Staten skal ikke blande sig i klimaet, det klarer markedet"],c:0,e:"Radikale Venstre har længe kæmpet for en høj og ensartet CO2-afgift, også på landbruget. En ambitiøs klimapolitik trækker mod værdipolitisk venstre."},
+  {a:"V",th:"EU",q:"Hvordan forholder Radikale Venstre sig til EU?",o:["Kritisk: Danmark skal have flere forbehold", "Meget positiv: Danmark skal af med sine EU-forbehold", "Kritisk: EU skal kun handle om handel"],c:1,e:"Radikale Venstre er et af de mest EU-positive partier og har bl.a. ønsket at afskaffe de danske forbehold og indføre euroen."},
+  {a:"V",th:"Ligestilling",q:"Hvad mener Radikale Venstre om ligestilling?",o:["Lige rettigheder for alle køn og seksualiteter", "Staten skal støtte de traditionelle familier", "Øremærket barsel er et indgreb i familiens frihed"],c:0,e:"Radikale Venstre lægger vægt på den enkeltes frihed og lige rettigheder og støtter fx øremærket barsel og stærke rettigheder for LGBT+-personer. Det trækker mod værdipolitisk venstre."}]},
+ {id:"M",name:"Moderaterne",lead:"Lars Løkke Rasmussen",seats:14,role:"Regering",col:"#A57BD6",x:1.5,y:-1.5,qs:[
+  {a:"F",th:"Ulighed",q:"Hvordan ser Moderaterne på økonomisk ulighed?",o:["Ulighed skal kun løses med højere ydelser", "Mere hjælp til de mest udsatte, fx psykisk syge", "Ulighed er godt, fordi det skaber konkurrence"],c:1,e:"Moderaterne vil især hjælpe de mest udsatte, fx psykisk sårbare, men vil løse det gennem brede aftaler over midten frem for klassisk rød eller blå politik. Fordelingspolitisk ligger partiet tæt på midten."},
+  {a:"F",th:"Skat",q:"Hvad vil Moderaterne typisk med skatten?",o:["Lavere skat på arbejde via brede kompromiser", "Meget højere skat, så der kan bruges flere penge på velfærd", "En høj formueskat på alle boligejere"],c:0,e:"Moderaterne var i regeringen med S, V og M (2022–2026) med til at sænke skatten på arbejde for at få flere i job, men lægger vægt på kompromiser med både højre- og venstrefløjen."},
+  {a:"V",th:"Klima og miljø",q:"Hvordan ser Moderaterne på klima- og miljøpolitikken?",o:["Grøn omstilling gennem brede aftaler og ny teknologi", "Klimapolitik er spild af penge", "Landbruget skal lukkes hurtigst muligt"],c:0,e:"Moderaterne går ind for grøn omstilling gennem brede aftaler, samarbejde med erhvervslivet og ny teknologi. Værdipolitisk ligger partiet tæt på midten."},
+  {a:"V",th:"EU",q:"Hvordan forholder Moderaterne sig til EU?",o:["Positiv: Danmark skal stå centralt i EU", "Kritisk: Danmark skal melde sig ud af EU", "Neutral: EU betyder ikke noget for Danmark"],c:0,e:"Moderaterne er positive over for EU. Lars Løkke Rasmussen har som udenrigsminister arbejdet for, at Danmark står centralt i EU, ikke mindst i sikkerhedspolitikken."},
+  {a:"V",th:"Ligestilling",q:"Hvad mener Moderaterne om ligestilling?",o:["Kønsroller er naturlige og skal ikke ændres", "Ligestilling er vigtig, men skal fremmes uden store konflikter", "Øremærket barsel skal afskaffes"],c:1,e:"Moderaterne går ind for ligestilling og lige rettigheder, men lægger vægt på pragmatiske løsninger frem for store ideologiske opgør. Værdipolitisk ligger partiet tæt på midten."}]},
+ {id:"V",name:"Venstre, Danmarks Liberale Parti",lead:"Troels Lund Poulsen",seats:18,role:"Opposition",col:"#1F4B8F",x:3,y:2.5,qs:[
+  {a:"F",th:"Ulighed",q:"Hvordan ser Venstre på økonomisk ulighed?",o:["Uligheden skal ned med højere ydelser og formueskat", "Det vigtigste er, at flere kommer i arbejde", "Kun staten kan løse uligheden"],c:1,e:"Venstre mener, at et arbejde er den bedste vej ud af fattigdom, og at en vis ulighed er acceptabel, hvis alle får det bedre. Det placerer Venstre til højre fordelingspolitisk."},
+  {a:"F",th:"Skat",q:"Hvad vil Venstre typisk med skatten?",o:["Højere skat på arbejde for at få mere velfærd", "Lavere skat på arbejde og gode vilkår for virksomheder", "En ny skat på de største formuer"],c:1,e:"Venstre vil sænke skatten på arbejde, så det bedre kan betale sig at arbejde, og give gode vilkår for virksomheder og landbrug."},
+  {a:"V",th:"Klima og miljø",q:"Hvordan ser Venstre på klima- og miljøpolitikken?",o:["Grøn omstilling, men uden at skade erhvervslivet", "Klimamålene skal fjernes, fordi de koster for meget", "Biler og flyrejser skal forbydes for at nå klimamålene"],c:0,e:"Venstre støtter klimamålene og var med i aftalen om en CO2-afgift på landbruget (den grønne trepart) i 2024, men lægger vægt på teknologi og hensyn til erhvervslivets konkurrenceevne."},
+  {a:"V",th:"EU",q:"Hvordan forholder Venstre sig til EU?",o:["Kritisk: Danmark skal have flere og stærkere forbehold over for EU", "Positiv: Danmark skal være med i kernen af EU", "Kritisk: Danmark skal ud af EU"],c:1,e:"Venstre er et EU-positivt parti, der har ønsket at afskaffe de danske forbehold, og som anbefalede et ja til at afskaffe forsvarsforbeholdet i 2022."},
+  {a:"V",th:"Ligestilling",q:"Hvad mener Venstre om ligestilling?",o:["Lige muligheder, men ingen kønskvoter ved lov", "Kønskvoter skal indføres ved lov i alle virksomheder", "Staten skal fremme traditionelle kønsroller"],c:0,e:"Venstre var med i aftalen om øremærket barsel til fædre, men lægger vægt på lige muligheder og familiernes frihed frem for lovbestemte kønskvoter."}]},
+ {id:"K",name:"Det Konservative Folkeparti",lead:"Mona Juul",seats:13,role:"Opposition",col:"#0E5B3C",x:5,y:3.5,qs:[
+  {a:"F",th:"Ulighed",q:"Hvordan ser De Konservative på økonomisk ulighed?",o:["Uligheden skal ned med meget højere sociale ydelser", "Lighed for loven er vigtigere end lige indkomster", "Uligheden skal ned med en ny skat på store formuer"],c:1,e:"De Konservative lægger vægt på frihed, ansvar og lighed for loven frem for lige indkomster og mener, at arbejde og familie er vejen frem. Det placerer partiet til højre fordelingspolitisk."},
+  {a:"F",th:"Skat",q:"Hvad vil De Konservative typisk med skatten?",o:["Lavere skat, fx når en familievirksomhed går i arv", "Højere skat på boliger og arv", "Højere topskat for at få mere velfærd"],c:0,e:"De Konservative vil sænke skatter og afgifter og har især kæmpet for lavere afgift, når en familievirksomhed går i arv."},
+  {a:"V",th:"Klima og miljø",q:"Hvordan ser De Konservative på klima- og miljøpolitikken?",o:["Grøn omstilling via teknologi frem for forbud", "Danmark skal ikke have klimamål, fordi de er for dyre", "Privatbilisme skal forbydes for at nå klimamålene"],c:0,e:"De Konservative støtter grøn omstilling og var med i aftalen om en CO2-afgift på landbruget i 2024, men vil helst bruge teknologi og markedet frem for forbud."},
+  {a:"V",th:"EU",q:"Hvordan forholder De Konservative sig til EU?",o:["Positiv, men EU skal lave færre regler", "Negativ: Danmark skal melde sig helt ud af EU", "Positiv: EU skal udvikles til én stor fælles stat"],c:0,e:"De Konservative er grundlæggende EU-positive og anbefalede et ja til at afskaffe forsvarsforbeholdet i 2022, men vil have mindre bureaukrati og mange små regler fra EU."},
+  {a:"V",th:"Ligestilling",q:"Hvad mener De Konservative om ligestilling?",o:["Familien skal selv bestemme, hvordan barslen fordeles", "Barslen skal deles helt lige mellem forældrene ved lov", "Kønskvoter på alle arbejdspladser"],c:0,e:"De Konservative lægger vægt på familiens frihed og var ikke med i aftalen om øremærket barsel. Det trækker mod værdipolitisk højre."}]},
+ {id:"LA",name:"Liberal Alliance",lead:"Alex Vanopslagh",seats:16,role:"Opposition",col:"#27B1B6",x:8,y:2.5,qs:[
+  {a:"F",th:"Ulighed",q:"Hvordan ser Liberal Alliance på økonomisk ulighed?",o:["Uligheden er for stor og skal ned med højere skat", "Ulighed er i orden, hvis de fattigste også får det bedre", "Alle voksne skal have en borgerløn"],c:1,e:"Liberal Alliance mener ikke, at ulighed i sig selv er et problem, så længe de fattigste får det bedre, og det kan betale sig at arbejde. Det placerer partiet længst til højre fordelingspolitisk."},
+  {a:"F",th:"Skat",q:"Hvad vil Liberal Alliance typisk med skatten?",o:["Hæve topskatten og indføre formueskat", "Afskaffe topskatten og sænke skatten generelt", "Bevare skatten og bruge flere penge på velfærd"],c:1,e:"Liberal Alliance vil afskaffe topskatten og sænke den samlede skat markant, finansieret af en mindre offentlig sektor."},
+  {a:"V",th:"Klima og miljø",q:"Hvordan ser Liberal Alliance på klima- og miljøpolitikken?",o:["Løsninger via markedet frem for tilskud og forbud", "Benzin- og dieselbiler skal forbydes med det samme", "Danmark skal have verdens højeste og dyreste klimamål"],c:0,e:"Liberal Alliance vil løse klimaudfordringen med markedsløsninger og mener, at forbud, tilskud og mange små regler er dyre og ineffektive."},
+  {a:"V",th:"EU",q:"Hvordan forholder Liberal Alliance sig til EU?",o:["Ja til fri handel, nej til flere EU-regler", "EU skal udvikles til én stor stat med fælles skat", "Danmark skal helt ud af EU"],c:0,e:"Liberal Alliance bakker op om EU's fælles marked og frihandel, men er kritisk over for, at EU blander sig i mere og mere og laver ny regulering."},
+  {a:"V",th:"Ligestilling",q:"Hvad mener Liberal Alliance om ligestilling?",o:["Staten skal ikke bestemme, hvordan familier deler barslen", "Kønskvoter i alle virksomheder", "Staten skal fremme traditionelle kønsroller"],c:0,e:"Liberal Alliance mener ikke, at staten skal blande sig i, hvordan familier fordeler barslen, og er imod kønskvoter. Samtidig er partiet liberalt i fx spørgsmål om seksualitet og er mindre stramt i udlændingepolitikken end DF og DD. Det trækker LA mod midten værdipolitisk."}]},
+ {id:"DD",name:"Danmarksdemokraterne",lead:"Inger Støjberg",seats:10,role:"Opposition",col:"#6FA4DA",x:4,y:6.5,qs:[
+  {a:"F",th:"Ulighed",q:"Hvordan ser Danmarksdemokraterne på ulighed?",o:["Uligheden mellem land og by skal mindskes", "Ulighed er slet ikke et problem i det danske samfund", "Uligheden skal ned med en ny formueskat på de rigeste"],c:0,e:"Danmarksdemokraterne har især fokus på uligheden mellem land og by og vil have, at hele Danmark hænger sammen, fx med bedre service og velfærd uden for de store byer."},
+  {a:"F",th:"Skat",q:"Hvad vil Danmarksdemokraterne typisk med skatten?",o:["Lavere afgifter på fx benzin og biler", "Højere afgifter på biler, så flere tager bussen", "En ny skat på landbrugsjord"],c:0,e:"Danmarksdemokraterne vil sænke skatter og afgifter, især dem der rammer bilister og familier uden for de store byer. Fordelingspolitisk ligger partiet til højre for midten."},
+  {a:"V",th:"Klima og miljø",q:"Hvordan ser Danmarksdemokraterne på klima- og miljøpolitikken?",o:["Klimapolitik må ikke ramme landbrug og landdistrikter hårdt", "Verdens højeste CO2-afgift på landbruget", "Klima er partiets allervigtigste sag"],c:0,e:"Danmarksdemokraterne er kritiske over for klimatiltag, der koster landbruget, bilisterne og landdistrikterne mange penge, fx en høj CO2-afgift på landbruget."},
+  {a:"V",th:"EU",q:"Hvordan forholder Danmarksdemokraterne sig til EU?",o:["Skeptisk: mere dansk selvbestemmelse", "Positiv: Danmark skal have euroen", "Positiv: EU skal bestemme mere over asyl"],c:0,e:"Danmarksdemokraterne er EU-skeptiske og vil have mere dansk selvbestemmelse, ikke mindst i udlændingepolitikken. Det trækker mod værdipolitisk højre."},
+  {a:"V",th:"Ligestilling",q:"Hvad mener Danmarksdemokraterne om ligestilling?",o:["Mere øremærket barsel og flere kønskvoter", "Familierne skal selv bestemme, uden krav fra staten", "Ligestilling skal sikres med højere skat"],c:1,e:"Danmarksdemokraterne lægger vægt på, at familierne selv bestemmer, og er skeptiske over for øremærket barsel og kønskvoter. Det trækker mod værdipolitisk højre."}]},
+ {id:"DF",name:"Dansk Folkeparti",lead:"Morten Messerschmidt",seats:16,role:"Opposition",col:"#EBC12F",x:1.5,y:8,qs:[
+  {a:"F",th:"Ulighed",q:"Hvordan ser Dansk Folkeparti på økonomisk ulighed?",o:["Mere til ældre og pensionister, mindre til nye udlændinge", "Ulighed er ikke et problem, så alle ydelser skal ned", "Uligheden skal ned med en høj formueskat"],c:0,e:"Dansk Folkeparti har gennem mange år kæmpet for de svageste ældre og folkepensionister, mens partiet vil have lavere ydelser til nyankomne udlændinge. Fordelingspolitisk ligger DF tæt på midten."},
+  {a:"F",th:"Skat",q:"Hvad vil Dansk Folkeparti typisk med skatten?",o:["Lavere afgifter, der rammer almindelige familier", "Afskaffe topskatten som det vigtigste", "Højere afgifter på el og benzin for klimaets skyld"],c:0,e:"Dansk Folkeparti prioriterer lavere afgifter, der rammer almindelige familier og pensionister, fx på el og brændstof."},
+  {a:"V",th:"Klima og miljø",q:"Hvordan ser Dansk Folkeparti på klima- og miljøpolitikken?",o:["Danmark skal ikke gå forrest med dyre klimatiltag", "Klima og natur er partiets allervigtigste mærkesag i dag", "Danmark skal have verdens højeste CO2-afgift på alt"],c:0,e:"Dansk Folkeparti er skeptisk over for dyre klimatiltag og mener ikke, at Danmark skal gå forrest, hvis det koster arbejdspladser eller gør hverdagen dyrere for almindelige familier."},
+  {a:"V",th:"EU",q:"Hvordan forholder Dansk Folkeparti sig til EU?",o:["Positiv: Danmark skal med i mere EU-samarbejde", "Skeptisk: mindre EU og mere dansk selvbestemmelse", "Positiv: EU skal udvikles til én stor stat med fælles hær"],c:1,e:"Dansk Folkeparti er EU-skeptisk og anbefalede et nej til at afskaffe forsvarsforbeholdet i 2022. Ønsket om national selvbestemmelse trækker mod værdipolitisk højre."},
+  {a:"V",th:"Ligestilling",q:"Hvad mener Dansk Folkeparti om ligestilling?",o:["Nej til øremærket barsel", "Mere øremærket barsel og flere kønskvoter", "Højere løn til kvindefag ved lov"],c:0,e:"Dansk Folkeparti lægger vægt på traditionelle familieværdier og var imod øremærket barsel. Det trækker mod værdipolitisk højre."}]},
+ {id:"BP",name:"Borgernes Parti",lead:"Lars Boje Mathiesen",seats:4,role:"Opposition",col:"#56636F",x:7.5,y:8,qs:[
+  {a:"F",th:"Ulighed",q:"Hvordan ser Borgernes Parti på økonomisk ulighed?",o:["Mere omfordeling og højere sociale ydelser til alle", "Det skal kunne betale sig at arbejde, ikke mere omfordeling", "Ulighed skal løses med en formueskat på store formuer"],c:1,e:"Borgernes Parti mener ikke, at mere omfordeling er løsningen, men vil have lavere skat og mindre bureaukrati, så det kan betale sig at arbejde. Det trækker mod højre fordelingspolitisk."},
+  {a:"F",th:"Skat",q:"Hvad vil Borgernes Parti typisk med skatten?",o:["Højere skat på de rigeste og på store virksomheder", "Lavere skatter og afgifter og en mindre stat", "Højere afgifter på biler og benzin"],c:1,e:"Borgernes Parti vil sænke skatter og afgifter og gøre op med det, partiet ser som et for stort og bureaukratisk offentligt system."},
+  {a:"V",th:"Klima og miljø",q:"Hvordan ser Borgernes Parti på klima- og miljøpolitikken?",o:["Kritisk over for dyre klimaafgifter", "Klima og natur er partiets vigtigste sag", "Danmark skal have verdens højeste klimamål"],c:0,e:"Borgernes Parti er kritisk over for klimaafgifter og grønne krav, som partiet mener gør hverdagen dyrere for almindelige danskere."},
+  {a:"V",th:"EU",q:"Hvordan forholder Borgernes Parti sig til EU?",o:["Meget kritisk: mindre magt til EU", "Positiv: Danmark skal have euroen", "Positiv: EU skal bestemme over asyl"],c:0,e:"Borgernes Parti er meget EU-kritisk og vil flytte magt fra EU tilbage til Danmark. Ønsket om national selvbestemmelse trækker langt mod værdipolitisk højre."},
+  {a:"V",th:"Ligestilling",q:"Hvad mener Borgernes Parti om ligestilling?",o:["Mere øremærket barsel og flere kønskvoter", "Staten skal ikke blande sig i familiens valg", "Lønnen skal fastsættes af staten for at sikre ligeløn"],c:1,e:"Borgernes Parti mener, at staten ikke skal blande sig i, hvordan familierne indretter sig, og er imod fx kønskvoter. Det trækker mod værdipolitisk højre."}]}
+];
+const QORDER={"Ulighed":0,"Skat":1,"Klima og miljø":2,"EU":3,"Ligestilling":4}; PARTIES.forEach(p=>p.qs.sort((a,b)=>QORDER[a.th]-QORDER[b.th])); // samme rækkefølge for alle partier
+const RADIUS=3; // godkendt-område i enheder (skala -10..10)
+const BANDS=[{k:"hit",max:RADIUS,lab:"Placeringen holder",txt:"Partiet er placeret inden for målområdet.",pos:90},
+  {k:"warm",max:5,lab:"Varm",txt:"Du er tæt på, men ikke helt i mål.",pos:64},
+  {k:"luke",max:7,lab:"Lunken",txt:"Der er stadig et stykke vej.",pos:38},
+  {k:"cold",max:99,lab:"Kold",txt:"Placeringen ligger langt fra det, partiets politik peger på.",pos:10}];
+const BANDCOL={cold:"var(--t-cold)",luke:"var(--t-luke)",warm:"var(--t-warm)",hit:"var(--t-hit)"};
+
+/* text colour on party colour */
+function inkOn(hex){const n=parseInt(hex.slice(1),16);const ch=[n>>16,(n>>8)&255,n&255].map(v=>{v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)});
+  const L=.2126*ch[0]+.7152*ch[1]+.0722*ch[2];return L>.3?"#14181D":"#FFFFFF";}
+const pstyle=p=>`background:${p.col};color:${inkOn(p.col)}`;
+
+/* ---------- STATE ---------- */
+const KEY="pol-kompas-v5";
+let S={step:1,c:{},s:{},pa:{},sel2:"S",pos:{},st:{},sel3:null,showModel:false,seed:null,bl:null,blsel:null,agp:"S",agt:"nu"};
+try{const raw=localStorage.getItem(KEY); if(raw) S=Object.assign(S,JSON.parse(raw));}catch(e){}
+if(!S.bl) S.bl={pos:{},checked:false,first:null,done:false};
+if(S.seed==null) S.seed=Math.floor(Math.random()*1e9);
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+const $=s=>document.querySelector(s);
+const P=id=>PARTIES.find(p=>p.id===id);
+const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+
+/* stable per-student shuffle of answer options */
+function order(key,n){let h=S.seed>>>0;for(const ch of key)h=Math.imul(h^ch.charCodeAt(0),2654435761)>>>0;
+  const rnd=()=>{h=(h+0x6D2B79F5)>>>0;let t=h;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return((t^(t>>>14))>>>0)/4294967296;};
+  const a=[...Array(n).keys()];for(let i=n-1;i>0;i--){const j=Math.floor(rnd()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+
+/* ---------- NAV ---------- */
+/* låse: del 2 kræver alle svar i del 1, del 3 kræver alle svar i del 1 og 2. Lærerkoden låser alt op i denne browser. */
+const CODEHASH=956123112;
+const hcode=s=>{let x=5381;for(const c of s)x=(Math.imul(x,33)^c.charCodeAt(0))>>>0;return x};
+const unlocked=()=>!!S.unlocked;
+function renderTeacher(){const box=$("#teacher"); document.body.classList.toggle("teacher",!!S.unlocked);
+  box.innerHTML=S.unlocked?`<p>Lærertilstand er slået til i denne browser: alle dele er låst op, og knapperne til at nulstille del 1, del 2, blokkene og kompasset er synlige. Nulstilling af kompasset sletter også det officielle resultat.</p><div><button class="btn ghost" id="t-lock">Slå lærertilstand fra</button></div>`
+   :`<label for="t-code">Lærerkode</label><div class="t-row"><input id="t-code" type="password" autocomplete="off"><button class="btn ghost" id="t-go">Lås op</button></div><p class="t-msg" id="t-msg" role="status"></p>`;
+  const lk=$("#t-lock"); if(lk) lk.onclick=()=>{S.unlocked=false;S.showModel=false;save();renderTeacher();counts();if(S.step===3)renderBlocs();if(S.step===4)renderCompass();let st=S.step;while(st>1&&!canGo(st))st--;if(st!==S.step)go(st);};
+  const g=$("#t-go"); if(g){const tryCode=()=>{const v=$("#t-code").value.trim().toLowerCase();
+      if(hcode(v)===CODEHASH){S.unlocked=true;save();renderTeacher();counts();if(S.step===3)renderBlocs();if(S.step===4)renderCompass();}
+      else $("#t-msg").textContent="Koden passer ikke.";};
+    g.onclick=tryCode; $("#t-code").addEventListener("keydown",e=>{if(e.key==="Enter")tryCode();});}
+}
+function missing(n){ if(n===1) return CONCEPTS.length+SORT.length-(Object.keys(S.c).length+Object.keys(S.s).length);
+  return PARTIES.reduce((a,p)=>a+p.qs.length,0)-Object.values(S.pa).reduce((a,o)=>a+Object.keys(o).length,0); }
+function canGo(n){ if(unlocked()||n===1) return true; if(n===2) return missing(1)===0; if(n===3) return missing(1)===0&&missing(2)===0; return missing(1)===0&&missing(2)===0&&S.bl.done; }
+function lockMsg(){ const m1=missing(1); if(m1>0) return `Besvar de sidste ${m1} spørgsmål i del 1 for at gå videre.`;
+  const m2=missing(2); if(m2>0) return `Besvar de sidste ${m2} partispørgsmål i del 2 for at gå videre.`;
+  return "Placér alle partier i den rigtige blok for at låse op for kompasset."; }
+function go(n){n=+n;
+  if(!canGo(n)){const note=document.querySelector(`#p${S.step} .locknote`); if(note) note.textContent=lockMsg(); return;}
+  document.querySelectorAll(".locknote").forEach(x=>x.textContent="");
+  S.step=n;save();for(const i of [1,2,3,4]) $("#p"+i).hidden=(i!==S.step);
+  document.querySelectorAll(".step").forEach(b=>b.setAttribute("aria-current",+b.dataset.go===S.step?"step":"false"));
+  if(S.step===3) renderBlocs(); if(S.step===4) renderCompass(); window.scrollTo({top:0});}
+document.addEventListener("click",e=>{const g=e.target.closest("[data-go]");if(g)go(g.dataset.go);
+  const r=e.target.closest("[data-reset]");if(r)resetPart(r.dataset.reset);});
+function resetPart(n){if(n==="1"){S.c={};S.s={};renderP1();}
+  if(n==="b"){S.bl={pos:{},checked:false,first:null,done:false};S.blsel=null;renderBlocs();}
+  if(n==="2"){S.pa={};renderP2();}
+  if(n==="3"||n==="3p"){S.pos={};S.st={};S.first={};S.sel3=null;S.showModel=false; S.practice=(n==="3p"); if(n==="3") S.official=null; $("#check-msg").textContent=""; renderCompass();}
+  save();counts();}
+const totalTries=()=>Object.values(S.st).reduce((a,s)=>a+(s.tries||0),0);
+const hits=()=>PARTIES.filter(p=>S.st[p.id]&&S.st[p.id].band==="hit").length;
+function counts(){
+  const t1=CONCEPTS.length+SORT.length, d1=Object.keys(S.c).length+Object.keys(S.s).length;
+  const t2=PARTIES.reduce((a,p)=>a+p.qs.length,0), d2=Object.values(S.pa).reduce((a,o)=>a+Object.keys(o).length,0);
+  const h=hits();
+  $("#c1").textContent=d1+"/"+t1; $("#b1").style.width=(d1/t1*100)+"%";
+  $("#c2").textContent=canGo(2)?d2+"/"+t2:"Låst"; $("#b2").style.width=(d2/t2*100)+"%";
+  const bp=Object.keys(S.bl.pos).length;
+  $("#c3").textContent=canGo(3)?(S.bl.done?"12/12":bp+"/12"):"Låst"; $("#b3").style.width=((S.bl.done?12:bp)/12*100)+"%";
+  $("#c4").textContent=canGo(4)?h+"/12":"Låst"; $("#b4").style.width=(h/12*100)+"%";
+  document.querySelectorAll(".step").forEach(b=>{const lk=!canGo(+b.dataset.go);b.classList.toggle("locked",lk);b.setAttribute("aria-disabled",lk);});
+  const note=document.querySelector(`#p${S.step} .locknote`); if(note&&note.textContent&&canGo(S.step+1)) note.textContent="";
+}
+
+/* ---------- MC ---------- */
+/* Det rigtige svar fordeles jævnt på pladserne inden for hver gruppe af spørgsmål (begreberne / hvert parti),
+   så der aldrig er et mønster som "altid A" eller "A, B, C". Resten af svarene blandes tilfældigt pr. elev. */
+const POS_CACHE={};
+function groupPositions(group,m,n){ const ck=group+"|"+m+"|"+n; if(POS_CACHE[ck]) return POS_CACHE[ck];
+  const pool=[]; while(pool.length<m) for(let k=0;k<n;k++) pool.push(k);
+  let best=null;
+  for(let t=0;t<300;t++){ const o=order("pos"+group+t,pool.length).map(i=>pool[i]).slice(0,m);
+    let ok=true; for(let k=1;k<o.length;k++) if(o[k]===o[k-1]){ok=false;break;}
+    /* ingen trapper som A-B-C eller C-B-A */
+    for(let k=2;ok&&k<o.length;k++){const d1=o[k-1]-o[k-2], d2=o[k]-o[k-1]; if(Math.abs(d1)===1&&d1===d2) ok=false;}
+    if(ok){best=o;break;} if(!best) best=o; }
+  return POS_CACHE[ck]=best; }
+function optionOrder(q,key){ const n=q.o.length; let group,idx,m;
+  const mc=/^c(\d+)$/.exec(key);
+  if(mc){group="c";idx=+mc[1];m=CONCEPTS.length;}
+  else { const p=PARTIES.find(pp=>key.startsWith(pp.id)&&/^\d+$/.test(key.slice(pp.id.length))); if(!p) return order(key,n); group=p.id; idx=+key.slice(p.id.length); m=p.qs.length; }
+  const target=groupPositions(group,m,n)[idx];
+  const others=[...Array(n).keys()].filter(i=>i!==q.c), oo=order(key,others.length).map(i=>others[i]);
+  oo.splice(target,0,q.c); return oo; }
+function mcHTML(q,picked,name,key){
+  const ans=picked!==undefined, ord=optionOrder(q,key);
+  return `<div class="opts">${ord.map((oi,pos)=>{let cls="opt";
+    if(ans){ if(oi===q.c) cls+=" right"; else if(oi===picked) cls+=" wrong"; else cls+=" dim"; }
+    return `<button class="${cls}" data-${name}="${oi}" ${ans?"disabled":""}><span class="k">${"ABCD"[pos]}</span><span>${esc(q.o[oi])}</span></button>`}).join("")}</div>
+    ${ans?`<div class="expl"><b>${picked===q.c?"Rigtigt.":"Ikke helt."}</b> ${q.e}</div>`:""}`;
+}
+
+/* ---------- PART 1 ---------- */
+/* emnerne blandes for hver elev, så facit ikke følger et mønster (højst to ens svar i træk) */
+let SORT_ORD=null;
+function sortOrder(){ if(SORT_ORD) return SORT_ORD;
+  for(let t=0;t<200;t++){const o=order("sort"+t,SORT.length); let ok=true;
+    for(let k=2;k<o.length;k++) if(SORT[o[k]].a===SORT[o[k-1]].a&&SORT[o[k]].a===SORT[o[k-2]].a){ok=false;break;}
+    if(ok) return SORT_ORD=o; }
+  return SORT_ORD=order("sort",SORT.length); }
+function renderP1(){
+  $("#concepts").innerHTML=CONCEPTS.map((q,i)=>`<div class="q" data-ci="${i}"><div class="q-text">${esc(q.q)}</div>${mcHTML(q,S.c[i],"o","c"+i)}</div>`).join("");
+  $("#sort").innerHTML=sortOrder().map(i=>{const it=SORT[i];const p=S.s[i];const ans=p!==undefined;
+    return `<div class="sort-row" data-si="${i}"><div class="t">${esc(it.t)}</div>
+      <div class="seg" role="group" aria-label="Vælg akse">${["F","V","B"].map(k=>{let c="";if(ans){if(k===it.a)c="right";else if(k===p)c="wrong";}
+        return `<button class="${c}" data-k="${k}" ${ans?"disabled":""}>${LBL[k]}</button>`}).join("")}</div>
+      ${ans?`<div class="expl"><b>${p===it.a?"Rigtigt.":"Ikke helt."}</b> ${it.e}</div>`:""}</div>`}).join("");
+  const ca=Object.keys(S.c).length, cr=Object.entries(S.c).filter(([i,v])=>CONCEPTS[i].c===v).length;
+  const sa=Object.keys(S.s).length, sr=Object.entries(S.s).filter(([i,v])=>SORT[i].a===v).length;
+  $("#s1a").textContent=`${cr} rigtige · ${ca}/${CONCEPTS.length} besvaret`;
+  $("#s1b").textContent=`${sr} rigtige · ${sa}/${SORT.length} besvaret`;
+  counts();
+}
+$("#concepts").addEventListener("click",e=>{const b=e.target.closest("[data-o]");if(!b)return;
+  const i=b.closest("[data-ci]").dataset.ci;S.c[i]=+b.dataset.o;save();renderP1();});
+$("#sort").addEventListener("click",e=>{const b=e.target.closest("[data-k]");if(!b)return;
+  const i=b.closest("[data-si]").dataset.si;S.s[i]=b.dataset.k;save();renderP1();});
+
+/* ---------- PART 2 ---------- */
+function renderP2(){
+  $("#pgrid").innerHTML=PARTIES.map(p=>{const n=Object.keys(S.pa[p.id]||{}).length;
+    return `<button class="pbtn ${n===p.qs.length?"done":""}" data-pid="${p.id}" aria-pressed="${S.sel2===p.id}">
+      <span class="badge" style="${pstyle(p)}">${p.id}</span><span style="display:grid;min-width:0"><span class="nm">${esc(p.name)}</span><span class="pr">${n}/${p.qs.length} besvaret</span></span></button>`}).join("");
+  const p=P(S.sel2), a=S.pa[p.id]||{};
+  const right=Object.entries(a).filter(([i,v])=>p.qs[i].c===v).length;
+  $("#pquiz").innerHTML=`<div class="p-top"><div class="phead"><span class="badge" style="${pstyle(p)}">${p.id}</span><div><h3>${esc(p.name)}</h3>
+      <div class="pfacts"><span>Leder: <b>${esc(p.lead)}</b></span><span>Rolle: <b>${p.role}</b></span></div>
+      <span class="score">${right} rigtige · ${Object.keys(a).length}/${p.qs.length} besvaret</span></div></div>
+      <figure class="hemi-wrap">${seatsSVG(p)}<figcaption><b class="mono" style="color:var(--ink)">${p.seats}</b> af 179 mandater · flertal kræver 90</figcaption></figure></div>
+    ${p.qs.map((q,i)=>`<div class="q" data-qi="${i}"><span class="tag">${AX[q.a]} · ${q.th}</span><div class="q-text">${esc(q.q)}</div>${mcHTML(q,a[i],"po",p.id+i)}</div>`).join("")}
+    <div class="nextbar">${nextParty(p.id)}</div>`;
+  counts();
+}
+/* Folketingssalen: 179 pladser i en halvcirkel; partiets mandater fyldes ind fra venstre (siger intet om placering) */
+let SEATS=null;
+function seatLayout(){ if(SEATS) return SEATS; const N=179,R=7,r0=.42;
+  const radii=[...Array(R)].map((_,i)=>r0+(1-r0)*i/(R-1)), tot=radii.reduce((a,b)=>a+b,0);
+  const counts=radii.map(r=>Math.round(N*r/tot)); counts[R-1]+=N-counts.reduce((a,b)=>a+b,0);
+  const pts=[]; radii.forEach((r,i)=>{const n=counts[i];for(let k=0;k<n;k++){const a=Math.PI-Math.PI*k/(n-1);pts.push({a,x:100+90*r*Math.cos(a),y:100-90*r*Math.sin(a)});}});
+  pts.sort((p,q)=>q.a-p.a||Math.hypot(p.x-100,p.y-100)-Math.hypot(q.x-100,q.y-100)); return SEATS=pts; }
+function seatsSVG(p){return `<svg class="hemi" viewBox="0 4 200 101" role="img" aria-label="${p.seats} af Folketingets 179 mandater">${seatLayout().map((s,i)=>`<circle cx="${s.x.toFixed(1)}" cy="${s.y.toFixed(1)}" r="3.4" style="fill:${i<p.seats?p.col:"var(--seat)"}"/>`).join("")}</svg>`;}
+/* næste parti med ubesvarede spørgsmål; når alle er besvaret, sendes eleven videre til blokkene */
+const partyDone=p=>Object.keys(S.pa[p.id]||{}).length>=p.qs.length;
+function nextParty(id){const i=PARTIES.findIndex(p=>p.id===id);
+  if(PARTIES.every(partyDone)) return `<p class="done-note">Du har besvaret spørgsmålene om alle 12 partier.</p><button class="btn" data-go="3">Videre til blokkene</button>`;
+  for(let k=1;k<=PARTIES.length;k++){const n=PARTIES[(i+k)%PARTIES.length]; if(!partyDone(n)) return `<button class="btn ${partyDone(PARTIES[i])?"":"ghost"}" data-pid="${n.id}">${k===1?"Næste parti":"Næste ubesvarede parti"}: ${n.id}</button>`;}
+  return "";}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-pid]");if(!b)return;S.sel2=b.dataset.pid;save();renderP2();
+  /* næste parti: hop direkte op til det nye partis spørgsmål. Valg i oversigten: hop kun, hvis spørgsmålene ikke er synlige */
+  const q=$("#pquiz"), top=q.getBoundingClientRect().top, smooth=matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth";
+  if(b.closest("#pquiz")||top>innerHeight*0.6||top<0) q.scrollIntoView({behavior:smooth,block:"start"});});
+$("#pquiz").addEventListener("click",e=>{const b=e.target.closest("[data-po]");if(!b)return;
+  const i=b.closest("[data-qi]").dataset.qi;(S.pa[S.sel2]=S.pa[S.sel2]||{})[i]=+b.dataset.po;save();renderP2();});
+
+/* ---------- PART 3 ---------- */
+const board=$("#board"), tray=$("#tray");
+const pct=v=>((v+10)/20*100)+"%";
+const bandFor=d=>BANDS.find(b=>d<=b.max);
+[-10,-5,5,10].forEach(v=>{const lab=(v<0?"−":"")+Math.abs(v);
+  const tx=v===-10?"translate(12px,9px)":v===10?"translate(calc(-100% - 12px),9px)":"translate(-50%,9px)";
+  board.insertAdjacentHTML("beforeend",`<span class="tick" style="left:${pct(v)};top:50%;transform:${tx}">${lab}</span>`);
+  const ty=v===-10?"translate(10px,12px)":v===10?"translate(10px,calc(-100% - 12px))":"translate(10px,-50%)";
+  board.insertAdjacentHTML("beforeend",`<span class="tick" style="left:50%;top:${pct(v)};transform:${ty}">${lab}</span>`);});
+const SHORT={hit:"Holder",warm:"Varm",luke:"Lunken",cold:"Kold"};
+function pending(){return PARTIES.filter(p=>S.pos[p.id]&&!isLocked(p.id)&&!(S.st[p.id]&&S.st[p.id].band)).map(p=>p.id);}
+function checkParties(ids){
+  const done=[];
+  ids.forEach(id=>{const p=P(id),pos=S.pos[id]; if(!pos||isLocked(id))return;
+    const prev=S.st[id]; if(prev&&prev.band) return; // allerede tjekket og ikke flyttet
+    const d=Math.hypot(pos.x-p.x,pos.y-p.y);
+    if(!prev||!prev.tries){S.first=S.first||{};S.first[id]={x:pos.x,y:pos.y};} // første bud bruges til placeringsmønsteret
+    S.st[id]={tries:((prev&&prev.tries)||0)+1,d:d,band:bandFor(d).k}; done.push(id);});
+  if(!done.length) return;
+  if(done.length===1) S.sel3=done[0];
+  else {const sel=S.sel3&&S.st[S.sel3]&&S.st[S.sel3].band;
+    if(!sel||isLocked(S.sel3)){const off=done.find(id=>S.st[id].band!=="hit"); if(off) S.sel3=off;}}
+  save();renderCompass();
+  const cnt={hit:0,warm:0,luke:0,cold:0}; done.forEach(id=>cnt[S.st[id].band]++);
+  const parts=["hit","warm","luke","cold"].filter(k=>cnt[k]).map(k=>`${cnt[k]} ${SHORT[k].toLowerCase()}`);
+  $("#check-msg").textContent=`Du tjekkede ${done.length===1?P(done[0]).name:done.length+" partier"}: ${parts.join(", ")}.`;
+  reveal(done);
+}
+function reveal(ids){ids.forEach((id,i)=>setTimeout(()=>{
+  const ch=board.querySelector(`.chip[data-chip="${id}"]`), st=S.st[id]; if(!ch||!st||!st.band)return;
+  const col=BANDCOL[st.band], fg=st.band==="luke"?"var(--on-luke)":"var(--on-band)", L=ch.style.left, T=ch.style.top;
+  board.insertAdjacentHTML("beforeend",`<span class="pulse" style="left:${L};top:${T};--c:${col}"></span><span class="flag" style="left:${L};top:${T};--c:${col};color:${fg}">${SHORT[st.band]}</span>`);
+  ch.classList.remove("revealed"); void ch.offsetWidth; ch.classList.add("revealed");
+  const tmp=[...board.querySelectorAll(".pulse,.flag")].slice(-2); setTimeout(()=>tmp.forEach(n=>n.remove()),2700);
+},i*280));}
+function land(id){const el=board.querySelector(`.chip[data-chip="${id}"]`); if(el) el.classList.add("landed");}
+function chip(p){const st=S.st[p.id];const band=st&&st.band?st.band:"";
+  return `<button class="chip ${S.sel3===p.id?"sel":""}" data-chip="${p.id}" ${band?`data-band="${band}"`:""}
+    aria-label="${esc(p.name)}${S.pos[p.id]?`, placeret ved fordelingspolitik ${S.pos[p.id].x}, værdipolitik ${S.pos[p.id].y}`:", ikke placeret"}${band?", "+bandFor(st.d).lab:""}" style="${pstyle(p)}${S.pos[p.id]?`;left:${pct(S.pos[p.id].x)};top:${pct(S.pos[p.id].y)}`:""}">${p.id}</button>`;}
+function renderCompass(){
+  renderTeachSrc();
+  const sorted=[...PARTIES].sort((a,b)=>a.id.localeCompare(b.id,"da"));
+  tray.innerHTML=sorted.filter(p=>!S.pos[p.id]).map(chip).join("");
+  board.querySelectorAll(".chip,.model").forEach(n=>n.remove());
+  const allHit=hits()===12;
+  if((allHit||S.unlocked)&&S.showModel) board.insertAdjacentHTML("beforeend",PARTIES.map(p=>`<span class="model" style="left:${pct(p.x)};top:${pct(p.y)};border-color:${p.col}"><b>${p.id}</b></span>`).join(""));
+  board.insertAdjacentHTML("beforeend",PARTIES.filter(p=>S.pos[p.id]).map(chip).join(""));
+  renderPanel(); counts();
+  const pn=pending().length, cb=$("#check"); cb.textContent=pn?`Tjek placeringer (${pn})`:"Tjek placeringer"; cb.disabled=!pn;
+  const tt=totalTries();
+  $("#st-tries").textContent=tt; $("#st-hit").textContent=hits()+"/12";
+  /* første fuldførte gennemløb er det officielle resultat; senere runder er træning */
+  if(allHit&&!S.official){const sc=scores();
+    S.official={tt,c1:sc.c1,c2:sc.c2,bl:S.bl.first,ax:sc.ax,first:Object.assign({},S.first||{}),tries:Object.fromEntries(PARTIES.map(p=>[p.id,(S.st[p.id]&&S.st[p.id].tries)||1])),date:new Date().toISOString()};save();}
+  const practice=allHit&&S.practice;
+  let verdict="";
+  if(allHit){ verdict=practice?`Træningsrunden tæller ikke med. Dit officielle resultat er ${S.official.tt} forsøg fra første gennemløb.`
+    :tt===12?"Perfekt – alle partier ramt i første forsøg.":tt<=18?"Flot – du ramte de fleste partier hurtigt.":tt<=28?"Godt arbejde – du fik dem alle på plads.":"Du kom i mål. Prøv gerne en træningsrunde og se, om du kan gøre det bedre."; }
+  $("#donebox").innerHTML=allHit?`<div class="done-banner"><h3>${practice?`Træningsrunde klaret på ${tt} forsøg`:`Alle 12 partier er godkendt på ${tt} forsøg`}</h3><p><b>${verdict}</b></p>
+    <p>Sammenlign nu dine placeringer med modellen. Hvor er I uenige inden for målområdet, og hvordan vil du argumentere for din placering? Hvilke partier var sværest at placere, og hvorfor?</p>
+    <div class="actions"><button class="btn" data-reset="3p">Prøv igen som træning</button><button class="btn ghost" id="togmodel">${S.showModel?"Skjul":"Vis"} modelplaceringer</button></div></div>`:"";
+  if(S.official) $("#donebox").insertAdjacentHTML("beforeend",resultsHTML());
+  const tm=$("#togmodel"); if(tm) tm.onclick=()=>{S.showModel=!S.showModel;save();renderCompass();};
+  if(S.official) wireResults(S.official.tt);
+}
+/* ---------- RESULTATER ---------- */
+const avg=a=>a.reduce((s,v)=>s+v,0)/(a.length||1);
+const f1=v=>v.toFixed(1).replace(".",",");
+function scores(){
+  const c1=Object.entries(S.c).filter(([i,v])=>CONCEPTS[i].c===v).length+Object.entries(S.s).filter(([i,v])=>SORT[i].a===v).length;
+  let c2=0; const ax={F:[0,0],V:[0,0],M:[0,0]};
+  Object.entries(S.s).forEach(([i,v])=>{const a=SORT[i].a; if(a!=="B"){ax[a][1]++; if(v===a) ax[a][0]++;}});
+  PARTIES.forEach(p=>Object.entries(S.pa[p.id]||{}).forEach(([i,v])=>{const q=p.qs[i];ax[q.a][1]++; if(q.c===v){ax[q.a][0]++;c2++;}}));
+  return {c1,t1:CONCEPTS.length+SORT.length,c2,t2:PARTIES.reduce((a,p)=>a+p.qs.length,0),ax};
+}
+function pattern(first){
+  const ps=PARTIES.map(p=>({p,q:(first&&first[p.id])||S.pos[p.id]})).filter(o=>o.q);
+  if(!ps.length) return [];
+  const dx=ps.map(o=>o.q.x-o.p.x), dy=ps.map(o=>o.q.y-o.p.y);
+  const rad=avg(ps.map(o=>Math.hypot(o.q.x,o.q.y)-Math.hypot(o.p.x,o.p.y)));
+  const out=[];
+  if(rad>0.8) out.push(`Du placerede partierne <b>mere yderligt</b> end modellen, i gennemsnit ${f1(rad)} enheder længere fra midten.`);
+  else if(rad<-0.8) out.push(`Du placerede partierne <b>tættere på midten</b> end modellen, i gennemsnit ${f1(-rad)} enheder.`);
+  const mx=avg(dx), my=avg(dy);
+  if(mx>0.8) out.push("Du trak partierne mod <b>højre på den fordelingspolitiske akse</b>.");
+  else if(mx<-0.8) out.push("Du trak partierne mod <b>venstre på den fordelingspolitiske akse</b>.");
+  if(my>0.8) out.push("Du trak partierne mod <b>værdipolitisk højre</b>.");
+  else if(my<-0.8) out.push("Du trak partierne mod <b>værdipolitisk venstre</b>.");
+  if(!out.length) out.push("Du havde ingen tydelig tendens i én bestemt retning. Dine første bud lå spredt omkring modellen.");
+  const ax=avg(dx.map(Math.abs)), ay=avg(dy.map(Math.abs));
+  if(Math.abs(ax-ay)>0.8) out.push(`Du ramte mere præcist på den <b>${ax<ay?"fordelingspolitiske":"værdipolitiske"}</b> akse end på den ${ax<ay?"værdipolitiske":"fordelingspolitiske"}.`);
+  const worst=ps.reduce((a,o)=>Math.hypot(o.q.x-o.p.x,o.q.y-o.p.y)>Math.hypot(a.q.x-a.p.x,a.q.y-a.p.y)?o:a);
+  out.push(`Dit første bud lå længst fra modellen for <b>${esc(worst.p.name)}</b>.`);
+  return out;
+}
+function hardest(tries){return PARTIES.map(p=>({p,t:(tries&&tries[p.id])||0})).filter(o=>o.t>1).sort((a,b)=>b.t-a.t).slice(0,3);}
+function resultsHTML(){const O=S.official, sc=scores(), hs=hardest(O.tries);
+  const AXS=O.ax||sc.ax; const bars=["F","V"].map(k=>{const [r,t]=AXS[k];const pc=t?Math.round(r/t*100):0;
+    return `<div class="bar-row"><span>${AX[k]}</span><span class="bar-track"><i style="width:${pc}%"></i></span><span class="mono">${t?pc+" %":"–"}</span></div>`}).join("");
+  return `<div class="block results">
+    <div class="block-head"><h3>Dit resultat</h3><span class="score">Fra dit første gennemløb</span></div>
+    <div class="stats">
+      <div class="stat"><span class="v">${O.c1}/${sc.t1}</span><span class="l">Begreberne</span></div>
+      <div class="stat"><span class="v">${O.c2}/${sc.t2}</span><span class="l">Partierne</span></div>
+      ${O.bl!=null?`<div class="stat"><span class="v">${O.bl}/12</span><span class="l">Blokkene, 1. forsøg</span></div>`:""}
+      <div class="stat"><span class="v">${O.tt}</span><span class="l">Forsøg i kompasset</span></div>
+    </div>
+    <div class="res-grid">
+      <div class="res-col"><span class="eyebrow">Styrker og svagheder</span><div class="bars">${bars}</div>
+        <p class="muted" style="font-size:.85rem">Andel rigtige svar i del 1 og 2 fordelt på type.</p>
+        ${hs.length?`<p style="font-size:.9rem">Sværeste partier i kompasset: ${hs.map(o=>`<b>${o.p.id}</b> (${o.t} forsøg)`).join(", ")}</p>`:""}</div>
+      <div class="res-col"><span class="eyebrow">Dit placeringsmønster</span><ul class="pattern">${pattern(O.first).map(s=>`<li>${s}</li>`).join("")}</ul>
+        <p class="muted" style="font-size:.85rem">Bygger på dit første bud for hvert parti. Hvorfor tror du, du placerede partierne sådan?</p></div>
+    </div>
+    <div class="cert"><span class="eyebrow">Dit resultatbevis</span>
+      <label for="r-name" style="font-weight:500">Skriv dit navn på beviset</label>
+      <div class="t-row"><input id="r-name" type="text" placeholder="Dit navn" value="${esc(S.name||"")}" autocomplete="off"></div>
+      <img id="cert-img" alt="Resultatbevis med navn, resultater og dine første placeringer i kompasset">
+      <div class="actions"><button class="btn" id="cert-save" hidden>Gem resultatbevis</button></div>
+      <p class="muted" style="font-size:.85rem">Kompasset på beviset viser dit første bud for hvert parti. Kan du ikke gemme beviset, så tag et skærmbillede.</p>
+      <p class="t-msg" id="cert-msg" role="status"></p></div>
+  </div>`;}
+function wireResults(tt){
+  const nm=$("#r-name");
+  let tmr=null;
+  nm.addEventListener("input",()=>{S.name=nm.value;save();clearTimeout(tmr);tmr=setTimeout(()=>drawCert(tt),300);});
+  drawCert(tt);
+  const sv=$("#cert-save"); sv.hidden=!(DL||!IN_CLAUDE);
+  sv.onclick=async()=>{const cm=$("#cert-msg");cm.classList.remove("ok");cm.textContent="";
+    await drawCert(tt); if(!CERT) return;
+    const fn="resultatbevis-"+(((S.name||"").trim()||"kompas").toLowerCase().replace(/[^a-z0-9æøå]+/g,"-").replace(/^-|-$/g,""))+".png";
+    if(!DL){ /* uden for Claude: almindelig download */
+      try{const u=URL.createObjectURL(CERT),a=document.createElement("a");a.href=u;a.download=fn;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),2000);cm.classList.add("ok");cm.textContent="Resultatbeviset er gemt i dine overførsler.";}
+      catch(e){cm.textContent="Beviset kan ikke gemmes herfra. Tag et skærmbillede i stedet.";}
+      return; }
+    try{await DL.save({filename:fn,data:CERT});cm.classList.add("ok");cm.textContent="Resultatbeviset er gemt.";}
+    catch(e){const c=e&&e.code;
+      if(c==="declined") return;
+      if(c==="rate_limited"){cm.textContent="Vent et øjeblik, og prøv igen.";return;}
+      sv.hidden=true;cm.textContent="Beviset kan ikke gemmes herfra. Tag et skærmbillede i stedet.";}};
+}
+/* ---------- RESULTATBEVIS (billede) ---------- */
+let DL=null, CERT=null; const IN_CLAUDE=/(^|\.)claude(usercontent)?\.(ai|com)$|claude\.site$/.test(location.hostname)||!!(window.claude&&window.claude.use);
+(async()=>{try{if(window.claude&&window.claude.use){DL=await window.claude.use("downloads");const b=$("#cert-save");if(b)b.hidden=!(DL||!IN_CLAUDE);}}catch(e){DL=null;}})();
+function rr(x,X,Y,w,h,r){x.beginPath();x.moveTo(X+r,Y);x.arcTo(X+w,Y,X+w,Y+h,r);x.arcTo(X+w,Y+h,X,Y+h,r);x.arcTo(X,Y+h,X,Y,r);x.arcTo(X,Y,X+w,Y,r);x.closePath();}
+let CERT_KEY="", CERT_URL="";
+const MARK_URI='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"%3E%3Crect width="64" height="64" rx="15" fill="%231D3E5E"/%3E%3Ccircle cx="32" cy="32" r="24.5" fill="none" stroke="%23F4F1EA" stroke-width="2" opacity=".55"/%3E%3Cpath d="M32 6v52M6 32h52" stroke="%23F4F1EA" stroke-width="2.6" stroke-linecap="round" opacity=".5"/%3E%3Cpolygon points="15.74,15.74 38.01,25.99 25.99,38.01" fill="%23D6243A"/%3E%3Cpolygon points="48.26,48.26 38.01,25.99 25.99,38.01" fill="%235B9BEA"/%3E%3Ccircle cx="32" cy="32" r="4" fill="%23F4F1EA"/%3E%3Ccircle cx="32" cy="32" r="1.6" fill="%231D3E5E"/%3E%3C/svg%3E';
+async function drawCert(tt){
+  const img=$("#cert-img"); if(!img) return;
+  const key=(S.name||"")+"|"+(S.official&&S.official.date);
+  if(key===CERT_KEY&&CERT_URL){img.src=CERT_URL;return;}
+  try{await document.fonts.ready;}catch(e){}
+  const W=1080,H=1350,cv=document.createElement("canvas");cv.width=W;cv.height=H;const x=cv.getContext("2d");
+  const ink="#171D24",muted="#5C6570",line="#D5D9D2",grid="#E6E9E3",soft="#F1F2EF",acc="#1D3E5E";
+  const D='"Bricolage Grotesque","Schibsted Grotesk",sans-serif',B='"Schibsted Grotesk",system-ui,sans-serif',M='"JetBrains Mono",ui-monospace,monospace';
+  const O=S.official; if(!O) return; tt=O.tt; const sc=Object.assign(scores(),{c1:O.c1,c2:O.c2}), name=(S.name||"").trim()||"Uden navn";
+  x.fillStyle="#FFFFFF";x.fillRect(0,0,W,H);
+  x.fillStyle=acc;x.fillRect(0,0,W,14);
+  x.textBaseline="alphabetic";
+  x.fillStyle=muted;x.font=`700 22px ${B}`;x.fillText("RESULTATBEVIS · SAMFUNDSFAG",72,90);
+  try{const lg=new Image();lg.src=MARK_URI;await lg.decode();x.drawImage(lg,W-72-112,48,112,112);}catch(e){}
+  x.fillStyle=ink;x.font=`800 66px ${D}`;x.fillText("Det politiske kompas",72,166);
+  x.font=`500 40px ${B}`;x.fillText(name.length>34?name.slice(0,33)+"…":name,72,228);
+  x.fillStyle=muted;x.font=`400 24px ${B}`;x.textAlign="right";
+  x.fillText(new Date(O.date).toLocaleDateString("da-DK",{day:"numeric",month:"long",year:"numeric"}),W-72,228);x.textAlign="left";
+  // tal
+  const stats=[[`${sc.c1}/${sc.t1}`,"BEGREBERNE"],[`${sc.c2}/${sc.t2}`,"PARTIERNE"]].concat(O.bl!=null?[[`${O.bl}/12`,"BLOKKE, 1. FORSØG"]]:[]).concat([[`${tt}`,"KOMPASFORSØG"]]);
+  const bw=(W-144-(stats.length-1)*24)/stats.length;
+  stats.forEach(([v,l],i)=>{const bx=72+i*(bw+24),by=272;x.fillStyle=soft;rr(x,bx,by,bw,128,18);x.fill();
+    x.fillStyle=ink;x.font=`700 50px ${M}`;x.fillText(v,bx+24,by+70);x.fillStyle=muted;let fs=18;x.font=`700 ${fs}px ${B}`;while(x.measureText(l).width>bw-40&&fs>12){fs--;x.font=`700 ${fs}px ${B}`;}x.fillText(l,bx+24,by+104);});
+  // kompas
+  const S0=660,cx=(W-S0)/2,cy=490;
+  x.fillStyle=ink;x.font=`700 24px ${B}`;x.fillText("Mine første placeringer",72,442);
+  x.fillStyle=soft;x.fillRect(cx,cy,S0,S0);
+  x.strokeStyle=grid;x.lineWidth=1.5;for(let i=1;i<10;i++){const g=cx+i*S0/10,h=cy+i*S0/10;x.beginPath();x.moveTo(g,cy);x.lineTo(g,cy+S0);x.moveTo(cx,h);x.lineTo(cx+S0,h);x.stroke();}
+  x.strokeStyle=muted;x.lineWidth=2.5;x.beginPath();x.moveTo(cx+S0/2,cy);x.lineTo(cx+S0/2,cy+S0);x.moveTo(cx,cy+S0/2);x.lineTo(cx+S0,cy+S0/2);x.stroke();
+  x.strokeStyle=line;x.lineWidth=2;x.strokeRect(cx,cy,S0,S0);
+  x.fillStyle=muted;[[cx+S0,cy+S0/2,0],[cx,cy+S0/2,Math.PI],[cx+S0/2,cy,-Math.PI/2],[cx+S0/2,cy+S0,Math.PI/2]].forEach(([ax,ay,r])=>{x.save();x.translate(ax,ay);x.rotate(r);x.beginPath();x.moveTo(0,0);x.lineTo(-14,-8);x.lineTo(-14,8);x.closePath();x.fill();x.restore();});
+  x.fillStyle=muted;x.font=`700 18px ${B}`;x.textAlign="center";
+  x.fillText("VÆRDIPOLITISK VENSTREORIENTERET",cx+S0/2,cy-18);x.fillText("VÆRDIPOLITISK HØJREORIENTERET",cx+S0/2,cy+S0+18+13);
+  x.save();x.translate(cx-18,cy+S0/2);x.rotate(-Math.PI/2);x.fillText("FORDELINGSPOLITISK VENSTRE",0,0);x.restore();
+  x.save();x.translate(cx+S0+18,cy+S0/2);x.rotate(Math.PI/2);x.fillText("FORDELINGSPOLITISK HØJRE",0,0);x.restore();
+  x.font=`800 22px ${D}`;x.textBaseline="middle";
+  // første bud for hvert parti (det endelige ligger altid i målområdet og siger derfor mindre)
+  PARTIES.filter(p=>(O.first&&O.first[p.id])||S.pos[p.id]).forEach(p=>{const q=(O.first&&O.first[p.id])||S.pos[p.id];
+    const w=Math.max(52,x.measureText(p.id).width+28),h=40;
+    const px=Math.min(cx+S0-w/2,Math.max(cx+w/2,cx+(q.x+10)/20*S0)),py=Math.min(cy+S0-h/2,Math.max(cy+h/2,cy+(q.y+10)/20*S0));
+    x.save();x.shadowColor="rgba(0,0,0,.18)";x.shadowBlur=8;x.shadowOffsetY=2;x.fillStyle=p.col;rr(x,px-w/2,py-h/2,w,h,h/2);x.fill();x.restore();
+    x.fillStyle=inkOn(p.col);x.fillText(p.id,px,py+1);});
+  x.textAlign="left";x.textBaseline="alphabetic";
+  // fod
+  x.strokeStyle=line;x.lineWidth=2;x.beginPath();x.moveTo(72,1236);x.lineTo(W-72,1236);x.stroke();
+  x.fillStyle=muted;x.font=`400 22px ${B}`;x.fillText("Folketinget efter valget 24. marts 2026",72,1280);
+  x.font=`400 18px ${B}`;x.fillText("Udviklet af Bonnie Kjeldgaard-Christiansen, Haderslev Katedralskole",72,1316);x.font=`400 22px ${B}`;
+  x.textAlign="right";x.fillText(tt===12?"Alle partier ramt i første forsøg":`Alle 12 partier godkendt på ${tt} forsøg`,W-72,1280);x.textAlign="left";
+  CERT_URL=cv.toDataURL("image/png"); CERT_KEY=key; img.src=CERT_URL;
+  await new Promise(r=>cv.toBlob(b=>{CERT=b;r();}));
+}
+function thermHTML(band){const b=BANDS.find(x=>x.k===band);
+  return `<div class="therm" aria-hidden="true"><div class="therm-bar"><i style="left:${b.pos}%"></i></div>
+  <div class="therm-labels"><span>Kold</span><span>Lunken</span><span>Varm</span><span>Holder</span></div></div>`;}
+/* udlændingepolitik fylder meget i dansk værdipolitik, men har ikke sit eget spørgsmål i del 2 */
+const UDL={S:"En stram udlændingepolitik",SF:"En mere lempelig udlændingepolitik end S",EL:"En lempelig og humanitær udlændingepolitik",ALT:"En lempelig og humanitær udlændingepolitik",RV:"En lempelig og humanistisk udlændingepolitik",M:"En stram, men pragmatisk udlændingepolitik",V:"En stram udlændingepolitik",K:"En stram udlændingepolitik",LA:"En forholdsvis stram udlændingepolitik, men mindre stram end DF og DD",DD:"En meget stram udlændingepolitik",DF:"En meget stram udlændingepolitik",BP:"En meget stram udlændingepolitik"};
+function refsHTML(p,axes){
+  return p.qs.filter(q=>axes.includes(q.a)).map(q=>`<div class="ref"><span class="q2">${esc(q.q)}</span><span class="ans">${esc(q.o[q.c])}</span></div>`).join("")
+    +(axes.includes("V")?`<div class="ref"><span class="q2">Udlændingepolitik</span><span class="ans">${esc(UDL[p.id])}</span></div>`:"");
+}
+function renderPanel(){
+  const id=S.sel3, panel=$("#panel");
+  if(!id){panel.innerHTML=`<h3>Afstandsmåleren</h3><p class="muted">Når du har tjekket en placering, får partiet en ring i en af fire farver:</p>
+    <div class="legend"><div><i style="border-color:var(--t-cold)"></i>Kold: langt fra</div><div><i style="border-color:var(--t-luke)"></i>Lunken: et stykke vej</div>
+    <div><i style="border-color:var(--t-warm)"></i>Varm: tæt på</div><div><i style="border-color:var(--t-hit)"></i>Placeringen holder</div></div>
+    <p class="muted" style="font-size:.9rem">Vælg et parti for at se feedback. Feedbacken fortæller ikke, hvilken vej partiet skal flyttes, men peger på den akse, du skal overveje igen, og på partiets holdninger.</p>`;return;}
+  const p=P(id), st=S.st[id], pos=S.pos[id];
+  let body="";
+  if(!pos) body=`<p class="muted">Partiet er ikke placeret endnu. Træk det ind i kompasset, eller tryk et sted i kompasset for at placere det.</p>`;
+  else if(!st||!st.band) body=`<p class="muted">Placeret, men ikke tjekket endnu. Tjek kun dette parti, eller tjek alle placerede partier på én gang.</p>
+    <div><button class="btn" id="check-one">Tjek ${esc(p.id)}</button></div>`;
+  else{const b=bandFor(st.d);
+    body=`${thermHTML(st.band)}<p><span class="status" style="color:${BANDCOL[st.band]}">${b.lab}.</span> ${b.txt}</p>
+      <p class="muted mono" style="font-size:.8rem">Forsøg på dette parti: ${st.tries}</p>`;
+    if(st.band!=="hit"){
+      const dx=Math.abs(pos.x-p.x), dy=Math.abs(pos.y-p.y);
+      let axes, axTxt;
+      if(dx>=dy*1.6){axes=["F"];axTxt="Se især på den <b>fordelingspolitiske</b> placering igen.";}
+      else if(dy>=dx*1.6){axes=["V"];axTxt="Se især på den <b>værdipolitiske</b> placering igen.";}
+      else {axes=["F","V"];axTxt="Se på både den <b>fordelingspolitiske</b> og den <b>værdipolitiske</b> placering igen.";}
+      body+=`<div class="hint"><p>${axTxt} Det mener ${esc(p.id)}:</p>${refsHTML(p,axes)}
+        <p class="muted" style="font-size:.9rem">Hvad betyder det for, hvor partiet står i forhold til de andre partier på ${axes.length>1?"de to akser":"aksen"}?</p></div>`;
+    }}
+  panel.innerHTML=`<div class="pp-head"><span class="badge" style="${pstyle(p)}">${p.id}</span><div><h3>${esc(p.name)}</h3><p class="muted" style="font-size:.85rem">${esc(p.lead)} · <span class="mono">${p.seats}</span> mandater</p></div></div>${body}
+    ${pos&&!(st&&st.band==="hit")?`<div><button class="btn ghost" id="unplace">Tag partiet ud af kompasset</button></div>`:""}`;
+  const u=$("#unplace"); if(u) u.onclick=()=>{delete S.pos[id];if(S.st[id])delete S.st[id].band;save();renderCompass();};
+  const co=$("#check-one"); if(co) co.onclick=()=>checkParties([id]);
+}
+
+function setPos(id,x,y){x=Math.max(-10,Math.min(10,x));y=Math.max(-10,Math.min(10,y));
+  S.pos[id]={x:Math.round(x*10)/10,y:Math.round(y*10)/10};
+  if(S.st[id]) S.st[id]={tries:S.st[id].tries}; // flyttet: skal tjekkes igen, forsøg bevares
+  save();}
+function boardCoord(cx,cy){const r=board.getBoundingClientRect();
+  if(cx<r.left||cx>r.right||cy<r.top||cy>r.bottom) return null;
+  return {x:(cx-r.left)/r.width*20-10,y:(cy-r.top)/r.height*20-10};}
+const isLocked=id=>S.st[id]&&S.st[id].band==="hit";
+
+document.addEventListener("pointerdown",e=>{
+  const c=e.target.closest(".chip[data-chip]");if(!c||e.button>0)return;
+  const id=c.dataset.chip; if(isLocked(id)){S.sel3=id;save();renderCompass();return;}
+  e.preventDefault();
+  const sx=e.clientX, sy=e.clientY; let drag=false, ghost=null;
+  const move=ev=>{
+    if(!drag&&Math.hypot(ev.clientX-sx,ev.clientY-sy)>5){drag=true;ghost=c.cloneNode(true);ghost.className="chip dragging";
+      ghost.style.left=ev.clientX+"px";ghost.style.top=ev.clientY+"px";document.body.appendChild(ghost);c.classList.add("lifting");}
+    if(drag){ghost.style.left=ev.clientX+"px";ghost.style.top=ev.clientY+"px";board.classList.toggle("over",!!boardCoord(ev.clientX,ev.clientY));}
+  };
+  const up=ev=>{lastChipUp={t:Date.now(),x:ev.clientX,y:ev.clientY};window.removeEventListener("pointermove",move);window.removeEventListener("pointerup",up);window.removeEventListener("pointercancel",up);
+    board.classList.remove("over");
+    if(drag){ghost.remove();const pt=boardCoord(ev.clientX,ev.clientY);
+      if(pt) setPos(id,pt.x,pt.y); else if(S.pos[id]){delete S.pos[id];if(S.st[id])delete S.st[id].band;}
+      S.sel3=id;save();renderCompass(); if(pt) land(id);}
+    else{S.sel3=(S.sel3===id&&!S.pos[id])?null:id;save();renderCompass();
+      const el=document.querySelector(`.chip[data-chip="${id}"]`); if(el) el.focus({preventScroll:true});}
+  };
+  window.addEventListener("pointermove",move);window.addEventListener("pointerup",up);window.addEventListener("pointercancel",up);
+});
+let lastChipUp={t:0,x:0,y:0};
+/* et tryk på en brik må ikke også tælle som et tryk på brættet (brikken gentegnes, og klikket lander på brættet) */
+board.addEventListener("click",e=>{if(e.target.closest(".chip")||(Date.now()-lastChipUp.t<450&&Math.hypot(e.clientX-lastChipUp.x,e.clientY-lastChipUp.y)<8))return;
+  const id=S.sel3; if(!id||isLocked(id))return;
+  const pt=boardCoord(e.clientX,e.clientY); if(!pt)return; setPos(id,pt.x,pt.y); renderCompass(); land(id);});
+document.addEventListener("keydown",e=>{
+  const c=e.target.closest&&e.target.closest("#board .chip"); if(!c)return;
+  const id=c.dataset.chip; if(isLocked(id)||!S.pos[id])return;
+  const step=e.shiftKey?2:0.5; const m={ArrowLeft:[-step,0],ArrowRight:[step,0],ArrowUp:[0,-step],ArrowDown:[0,step]}[e.key];
+  if(!m)return; e.preventDefault(); setPos(id,S.pos[id].x+m[0],S.pos[id].y+m[1]); S.sel3=id; renderCompass();
+  const el=document.querySelector(`.chip[data-chip="${id}"]`); if(el) el.focus({preventScroll:true});
+});
+$("#check").addEventListener("click",()=>checkParties(pending()));
+
+/* tastatur: Enter/mellemrum på et parti i bakken sætter det i midten; piletaster flytter det */
+document.addEventListener("click",e=>{const c=e.target.closest&&e.target.closest(".chip[data-chip]"); if(!c||e.detail!==0)return;
+  const id=c.dataset.chip; if(!S.pos[id]&&!isLocked(id)){setPos(id,0,0);} S.sel3=id;save();renderCompass();land(id);
+  const el=document.querySelector(`#board .chip[data-chip="${id}"]`)||document.querySelector(`.chip[data-chip="${id}"]`); if(el) el.focus({preventScroll:true});});
+/* ---------- DEL 3: BLOKKE ---------- */
+/* Afstemninger i Folketingssalen fra Folketingets åbne data (oda.ft.dk). Tal = % af afstemningerne, hvor to partier stemte ens (for, imod eller hverken-eller); fravær tæller ikke med. */
+const AGREE={"ids": ["EL", "ALT", "SF", "S", "RV", "M", "V", "K", "LA", "DD", "DF", "BP"], "n": 40, "from": "2026-06-25", "to": "2026-10-01", "m": [[100, 90, 78, 78, 78, 78, 65, 68, 60, 42, 50, 40], [90, 100, 80, 80, 80, 80, 68, 70, 68, 50, 52, 42], [78, 80, 100, 100, 100, 100, 78, 75, 62, 45, 48, 38], [78, 80, 100, 100, 100, 100, 78, 75, 62, 45, 48, 38], [78, 80, 100, 100, 100, 100, 78, 75, 62, 45, 48, 38], [78, 80, 100, 100, 100, 100, 78, 75, 62, 45, 48, 38], [65, 68, 78, 78, 78, 78, 100, 90, 78, 65, 68, 58], [68, 70, 75, 75, 75, 75, 90, 100, 88, 70, 68, 62], [60, 68, 62, 62, 62, 62, 78, 88, 100, 78, 70, 72], [42, 50, 45, 45, 45, 45, 65, 70, 78, 100, 82, 80], [50, 52, 48, 48, 48, 48, 68, 68, 70, 82, 100, 82], [40, 42, 38, 38, 38, 38, 58, 62, 72, 80, 82, 100]]};
+const TAGREE={"ids":["EL","ALT","SF","S","RV","M","V","K","LA","DD","DF","BP"],"from":"2022-12-22","to":"2026-02-26","t":{"udl":{"n":205,"m":[[100,96,91,76,93,76,76,40,75,35,10,10],[96,100,89,75,92,75,75,41,76,35,9,10],[91,89,100,81,89,81,81,43,79,38,10,16],[76,75,81,100,80,100,100,51,86,46,18,19],[93,92,89,80,100,80,80,44,78,38,10,6],[76,75,81,100,80,100,100,51,86,46,18,19],[76,75,81,100,80,100,100,51,86,46,18,19],[40,41,43,51,44,51,51,100,61,91,43,45],[75,76,79,86,78,86,86,61,100,57,25,39],[35,35,38,46,38,46,46,91,57,100,49,61],[10,9,10,18,10,18,18,43,25,49,100,97],[10,10,16,19,6,19,19,45,39,61,97,100]],"c":[[205,205,205,205,205,205,205,205,205,205,205,31],[205,205,205,205,205,205,205,205,205,205,205,31],[205,205,205,205,205,205,205,205,205,205,205,31],[205,205,205,205,205,205,205,205,205,205,205,31],[205,205,205,205,205,205,205,205,205,205,205,31],[205,205,205,205,205,205,205,205,205,205,205,31],[205,205,205,205,205,205,205,205,205,205,205,31],[205,205,205,205,205,205,205,205,205,205,205,31],[205,205,205,205,205,205,205,205,205,205,205,31],[205,205,205,205,205,205,205,205,205,205,205,31],[205,205,205,205,205,205,205,205,205,205,205,31],[31,31,31,31,31,31,31,31,31,31,31,31]],"ex":[{"d":"2025-05-27","k":"Beslutningsforslag","t":"Tildækningsforbud på uddannelsesinstitutioner","f":["SF","K","DD","DF","BP"],"i":["EL","ALT","S","RV","M","V","LA"],"h":[]},{"d":"2025-05-27","k":"Beslutningsforslag","t":"Indføre en model, der skal screene indfødsretsansøgere for antidemokratiske værdier","f":["K","LA","DD","DF"],"i":["EL","ALT","SF","S","RV","M","V"],"h":["BP"]},{"d":"2025-03-13","k":"Beslutningsforslag","t":"Udarbejdelse af rapporter om indvandreres kriminelle netværk og strukturer","f":["SF","K","LA","DD","DF","BP"],"i":["EL","ALT","S","RV","M","V"],"h":[]},{"d":"2025-03-13","k":"Beslutningsforslag","t":"Etablering af udrejsecenter for udvisningsdømte i et tredjeland","f":["K","LA","DD","DF","BP"],"i":["EL","ALT","SF","S","RV","M","V"],"h":[]},{"d":"2024-02-29","k":"Vedtagelsestekst","t":"Tildeling af statsborgerskaber","f":["SF","S","M","V","LA"],"i":["EL","ALT","RV","K","DD","DF"],"h":[]},{"d":"2023-04-27","k":"Vedtagelsestekst","t":"Permanent grænsekontrol","f":["SF","S","M","V","LA"],"i":["EL","ALT","RV","K","DD","DF"],"h":[]}]},"klima":{"n":134,"m":[[100,92,87,57,82,57,57,67,52,43,39,11],[92,100,82,53,77,53,53,62,47,43,37,14],[87,82,100,68,90,68,68,72,61,48,44,11],[57,53,68,100,68,100,100,79,79,67,61,31],[82,77,90,68,100,68,68,76,64,50,45,14],[57,53,68,100,68,100,100,79,79,67,61,31],[57,53,68,100,68,100,100,79,79,67,61,31],[67,62,72,79,76,79,79,100,85,70,66,34],[52,47,61,79,64,79,79,85,100,77,72,49],[43,43,48,67,50,67,67,70,77,100,76,63],[39,37,44,61,45,61,61,66,72,76,100,69],[11,14,11,31,14,31,31,34,49,63,69,100]],"c":[[132,132,132,132,132,132,132,132,132,132,132,35],[132,132,132,132,132,132,132,132,132,132,132,35],[132,132,132,132,132,132,132,132,132,132,132,35],[132,132,132,132,132,132,132,132,132,132,132,35],[132,132,132,132,132,132,132,132,132,132,132,35],[132,132,132,132,132,132,132,132,132,132,132,35],[132,132,132,132,132,132,132,132,132,132,132,35],[132,132,132,132,132,132,132,132,132,132,132,35],[132,132,132,132,132,132,132,132,132,132,132,35],[132,132,132,132,132,132,132,132,132,132,132,35],[132,132,132,132,132,132,132,132,132,132,132,35],[35,35,35,35,35,35,35,35,35,35,35,35]],"ex":[{"d":"2025-12-02","k":"Vedtagelsestekst","t":"Regeringens indsats for at sikre rent drikkevand","f":["S","M","V","LA","DD","BP"],"i":["EL","ALT","SF","RV","K"],"h":["DF"]},{"d":"2025-06-11","k":"Beslutningsforslag","t":"Forbedre mulighederne for at opsætte solceller på offentlige bygninger","f":["EL","ALT","SF","RV","K","DD","BP"],"i":["S","M","V","LA","DF"],"h":[]},{"d":"2024-05-28","k":"Beslutningsforslag","t":"Forbedret miljøkontrol","f":["EL","ALT","SF","RV","K","LA"],"i":["S","M","V","DD","DF"],"h":[]},{"d":"2023-06-02","k":"Beslutningsforslag","t":"Varig bevilling til Klimarådets understøttelse af klimaloven","f":["EL","ALT","SF","RV","K","LA"],"i":["S","M","V","DD","DF"],"h":[]},{"d":"2023-06-01","k":"Beslutningsforslag","t":"Et nationalt forbud mod PFAS i forbrugerprodukter","f":["EL","ALT","SF","RV","K","DF"],"i":["S","M","V","LA","DD"],"h":[]},{"d":"2023-05-16","k":"Beslutningsforslag","t":"En ambitiøs strategi for energieffektiviseringer og energibesparelser frem mod 2030","f":["EL","ALT","SF","RV","K"],"i":["S","M","V","LA","DD","DF"],"h":[]}]},"skat":{"n":369,"m":[[100,77,82,61,65,61,61,43,43,36,48,32],[77,100,77,66,72,66,66,52,49,46,51,24],[82,77,100,77,79,77,77,55,52,39,47,27],[61,66,77,100,91,100,100,76,71,51,56,39],[65,72,79,91,100,91,91,73,68,48,52,46],[61,66,77,100,91,100,100,76,71,51,56,39],[61,66,77,100,91,100,100,76,71,51,56,39],[43,52,55,76,73,76,76,100,70,58,54,56],[43,49,52,71,68,71,71,70,100,62,67,66],[36,46,39,51,48,51,51,58,62,100,71,78],[48,51,47,56,52,56,56,54,67,71,100,68],[32,24,27,39,46,39,39,56,66,78,68,100]],"c":[[364,364,364,364,364,364,364,364,364,364,364,41],[364,365,365,365,365,365,365,365,365,365,365,41],[364,365,365,365,365,365,365,365,365,365,365,41],[364,365,365,365,365,365,365,365,365,365,365,41],[364,365,365,365,365,365,365,365,365,365,365,41],[364,365,365,365,365,365,365,365,365,365,365,41],[364,365,365,365,365,365,365,365,365,365,365,41],[364,365,365,365,365,365,365,365,365,365,365,41],[364,365,365,365,365,365,365,365,365,365,365,41],[364,365,365,365,365,365,365,365,365,365,365,41],[364,365,365,365,365,365,365,365,365,365,365,41],[41,41,41,41,41,41,41,41,41,41,41,41]],"ex":[{"d":"2025-06-11","k":"Beslutningsforslag","t":"Forbedre mulighederne for at opsætte solceller på offentlige bygninger","f":["EL","ALT","SF","RV","K","DD","BP"],"i":["S","M","V","LA","DF"],"h":[]},{"d":"2025-06-03","k":"Lovforslag","t":"Midlertidig forhøjelse af afskrivningsgrundlaget for nye driftsmidler","f":["EL","SF","S","RV","M","V","K"],"i":["ALT","LA","DD","DF","BP"],"h":[]},{"d":"2025-02-06","k":"Beslutningsforslag","t":"Danskkrav for fuld kontanthjælp","f":["K","LA","DD","DF","BP"],"i":["EL","ALT","SF","S","RV","M","V"],"h":[]},{"d":"2024-12-19","k":"Lovforslag","t":"Ændring af reglerne om forfattervirksomhed og kunstnerisk aktivitet","f":["SF","S","RV","M","V"],"i":["EL","ALT","K","LA","DD","DF"],"h":[]},{"d":"2024-12-17","k":"Lovforslag","t":"Reform af kontanthjælpssystemet m.v","f":["SF","S","RV","M","V","K"],"i":["EL","ALT","LA","DD","DF"],"h":[]},{"d":"2024-06-04","k":"Lovforslag","t":"Passagerafgift på flyrejser","f":["EL","SF","S","RV","M","V"],"i":["ALT","K","LA","DD","DF"],"h":[]}]},"eu":{"n":52,"m":[[100,81,71,54,71,54,54,54,48,50,37,25],[81,100,79,65,87,65,65,60,58,50,23,25],[71,79,100,83,85,83,83,69,71,52,25,17],[54,65,83,100,75,100,100,75,81,62,31,0],[71,87,85,75,100,75,75,69,67,54,25,25],[54,65,83,100,75,100,100,75,81,62,31,0],[54,65,83,100,75,100,100,75,81,62,31,0],[54,60,69,75,69,75,75,100,90,75,52,50],[48,58,71,81,67,81,81,90,100,69,50,58],[50,50,52,62,54,62,62,75,69,100,63,50],[37,23,25,31,25,31,31,52,50,63,100,92],[25,25,17,0,25,0,0,50,58,50,92,100]],"c":[[52,52,52,52,52,52,52,52,52,52,52,12],[52,52,52,52,52,52,52,52,52,52,52,12],[52,52,52,52,52,52,52,52,52,52,52,12],[52,52,52,52,52,52,52,52,52,52,52,12],[52,52,52,52,52,52,52,52,52,52,52,12],[52,52,52,52,52,52,52,52,52,52,52,12],[52,52,52,52,52,52,52,52,52,52,52,12],[52,52,52,52,52,52,52,52,52,52,52,12],[52,52,52,52,52,52,52,52,52,52,52,12],[52,52,52,52,52,52,52,52,52,52,52,12],[52,52,52,52,52,52,52,52,52,52,52,12],[12,12,12,12,12,12,12,12,12,12,12,12]],"ex":[{"d":"2025-05-27","k":"Beslutningsforslag","t":"Afsøge rammerne for Danmarks internationale forpligtelser","f":["K","LA","DD","DF","BP"],"i":["EL","ALT","SF","S","RV","M","V"],"h":[]},{"d":"2025-05-27","k":"Vedtagelsestekst","t":"Det danske euroforbehold","f":["ALT","SF","S","RV","M","V"],"i":["K","LA","DD","DF","BP"],"h":["EL"]},{"d":"2024-06-04","k":"Beslutningsforslag","t":"Afvikling af EU's rejsecirkus","f":["EL","ALT","DD","DF"],"i":["SF","S","M","V","K","LA"],"h":["RV"]},{"d":"2024-05-02","k":"Beslutningsforslag","t":"Tilslutning til EU's solidariske fordeling af asylansøgere ved en særaftale","f":["EL","ALT","SF","RV"],"i":["S","M","V","K","LA","DD","DF"],"h":[]},{"d":"2024-04-02","k":"Beslutningsforslag","t":"Ændring af valgretsalderen til europaparlamentsvalg til 16 år","f":["EL","ALT","SF","RV"],"i":["S","M","V","K","LA","DD","DF"],"h":[]},{"d":"2023-04-27","k":"Vedtagelsestekst","t":"Permanent grænsekontrol","f":["SF","S","M","V","LA"],"i":["EL","ALT","RV","K","DD","DF"],"h":[]}]},"lig":{"n":24,"m":[[100,79,79,75,83,75,75,58,50,50,58,30],[79,100,92,79,79,79,79,62,46,54,62,50],[79,92,100,75,83,75,75,54,50,46,58,50],[75,79,75,100,92,100,100,42,42,33,50,40],[83,79,83,92,100,92,92,42,42,33,50,40],[75,79,75,100,92,100,100,42,42,33,50,40],[75,79,75,100,92,100,100,42,42,33,50,40],[58,62,54,42,42,42,42,100,83,92,92,70],[50,46,50,42,42,42,42,83,100,83,83,90],[50,54,46,33,33,33,33,92,83,100,83,80],[58,62,58,50,50,50,50,92,83,83,100,80],[30,50,50,40,40,40,40,70,90,80,80,100]],"c":[[24,24,24,24,24,24,24,24,24,24,24,10],[24,24,24,24,24,24,24,24,24,24,24,10],[24,24,24,24,24,24,24,24,24,24,24,10],[24,24,24,24,24,24,24,24,24,24,24,10],[24,24,24,24,24,24,24,24,24,24,24,10],[24,24,24,24,24,24,24,24,24,24,24,10],[24,24,24,24,24,24,24,24,24,24,24,10],[24,24,24,24,24,24,24,24,24,24,24,10],[24,24,24,24,24,24,24,24,24,24,24,10],[24,24,24,24,24,24,24,24,24,24,24,10],[24,24,24,24,24,24,24,24,24,24,24,10],[10,10,10,10,10,10,10,10,10,10,10,10]],"ex":[{"d":"2025-06-11","k":"Beslutningsforslag","t":"En national handleplan for kvinders sundhed","f":["EL","ALT","K","DD"],"i":["S","RV","M","V","LA","DF","BP"],"h":["SF"]},{"d":"2025-05-15","k":"Beslutningsforslag","t":"Begrænsning af retten til juridisk kønsskifte","f":["K","LA","DD","DF","BP"],"i":["EL","ALT","SF","S","RV","M","V"],"h":[]},{"d":"2025-01-23","k":"Beslutningsforslag","t":"15-17-årige ikke skal kunne igangsætte kønsskiftebehandling uden forældresamtykke","f":["K","LA","DD","DF","BP"],"i":["EL","ALT","SF","S","RV","M","V"],"h":[]},{"d":"2025-01-09","k":"Beslutningsforslag","t":"Forbyde kønsopdelt svømning i offentlige svømmehaller","f":["K","LA","DD","DF"],"i":["EL","ALT","SF","S","RV","M","V"],"h":[]},{"d":"2024-12-12","k":"Lovforslag","t":"Kønsfordeling blandt ledelsesmedlemmer i visse store børsnoterede aktieselskaber","f":["EL","ALT","SF","S","RV","M","V"],"i":["K","LA","DD","DF"],"h":[]},{"d":"2023-06-02","k":"Beslutningsforslag","t":"Nedsættelse af et udvalg, der skal udrede mænds og drenges ligestillingsudfordringer","f":["EL","ALT","SF","RV","K","DD","DF"],"i":["S","M","V","LA"],"h":[]}]},"born":{"n":164,"m":[[100,77,84,65,80,64,65,56,45,44,41,34],[77,100,73,53,70,52,53,45,54,51,47,41],[84,73,100,74,82,73,74,63,50,49,44,45],[65,53,74,100,74,99,100,76,66,57,54,55],[80,70,82,74,100,74,74,62,53,46,40,38],[64,52,73,99,74,100,99,75,66,57,53,52],[65,53,74,100,74,99,100,76,66,57,54,55],[56,45,63,76,62,75,76,100,76,74,70,76],[45,54,50,66,53,66,66,76,100,82,76,79],[44,51,49,57,46,57,57,74,82,100,79,83],[41,47,44,54,40,53,54,70,76,79,100,76],[34,41,45,55,38,52,55,76,79,83,76,100]],"c":[[164,164,164,164,164,164,164,164,164,164,164,29],[164,164,164,164,164,164,164,164,164,164,164,29],[164,164,164,164,164,164,164,164,164,164,164,29],[164,164,164,164,164,164,164,164,164,164,164,29],[164,164,164,164,164,164,164,164,164,164,164,29],[164,164,164,164,164,164,164,164,164,164,164,29],[164,164,164,164,164,164,164,164,164,164,164,29],[164,164,164,164,164,164,164,164,164,164,164,29],[164,164,164,164,164,164,164,164,164,164,164,29],[164,164,164,164,164,164,164,164,164,164,164,29],[164,164,164,164,164,164,164,164,164,164,164,29],[29,29,29,29,29,29,29,29,29,29,29,29]],"ex":[{"d":"2025-06-03","k":"Beslutningsforslag","t":"En national undersøgelse af vold blandt folkeskoleelever","f":["K","LA","DD","DF","BP"],"i":["EL","SF","S","RV","M","V"],"h":["ALT"]},{"d":"2025-05-27","k":"Beslutningsforslag","t":"Forbud mod bederum på offentlige uddannelsesinstitutioner","f":["K","LA","DD","DF","BP"],"i":["EL","ALT","S","RV","M","V"],"h":["SF"]},{"d":"2025-05-27","k":"Beslutningsforslag","t":"Tildækningsforbud på uddannelsesinstitutioner","f":["SF","K","DD","DF","BP"],"i":["EL","ALT","S","RV","M","V","LA"],"h":[]},{"d":"2024-06-04","k":"Beslutningsforslag","t":"Bedre indeklima i skolerne","f":["EL","ALT","SF","K","DD","DF"],"i":["S","RV","M","V","LA"],"h":[]},{"d":"2024-06-04","k":"Beslutningsforslag","t":"Sikre unge øboere lige mulighed for at starte på en ungdomsuddannelse","f":["EL","ALT","SF","RV","DD"],"i":["S","M","V","K","LA","DF"],"h":[]},{"d":"2024-06-04","k":"Beslutningsforslag","t":"Nedsættelse af en arbejdsgruppe til undersøgelse af renteniveauet på su-lån og -gæld","f":["EL","ALT","SF","RV","K"],"i":["S","M","V","LA","DD","DF"],"h":[]}]},"pens":{"n":5,"m":[[100,100,100,40,60,40,40,60,40,80,100,null],[100,100,100,40,60,40,40,60,40,80,100,null],[100,100,100,40,60,40,40,60,40,80,100,null],[40,40,40,100,40,100,100,40,20,60,40,null],[60,60,60,40,100,40,40,100,80,80,60,null],[40,40,40,100,40,100,100,40,20,60,40,null],[40,40,40,100,40,100,100,40,20,60,40,null],[60,60,60,40,100,40,40,100,80,80,60,null],[40,40,40,20,80,20,20,80,100,60,40,null],[80,80,80,60,80,60,60,80,60,100,80,null],[100,100,100,40,60,40,40,60,40,80,100,null],[null,null,null,null,null,null,null,null,null,null,null,null]],"c":[[5,5,5,5,5,5,5,5,5,5,5,0],[5,5,5,5,5,5,5,5,5,5,5,0],[5,5,5,5,5,5,5,5,5,5,5,0],[5,5,5,5,5,5,5,5,5,5,5,0],[5,5,5,5,5,5,5,5,5,5,5,0],[5,5,5,5,5,5,5,5,5,5,5,0],[5,5,5,5,5,5,5,5,5,5,5,0],[5,5,5,5,5,5,5,5,5,5,5,0],[5,5,5,5,5,5,5,5,5,5,5,0],[5,5,5,5,5,5,5,5,5,5,5,0],[5,5,5,5,5,5,5,5,5,5,5,0],[0,0,0,0,0,0,0,0,0,0,0,0]],"ex":[{"d":"2025-05-22","k":"Lovforslag","t":"Regulering af folkepensionsalderen og ændring af revisionsbestemmelse m.v","f":["S","RV","M","V","K","LA","DD"],"i":["EL","ALT","SF","DF"],"h":[]},{"d":"2024-12-19","k":"Beslutningsforslag","t":"Pålægge regeringen at indkalde til forhandlinger om en ny indeksering af pensionsalderen","f":["EL","ALT","SF","RV","K","LA","DD","DF"],"i":["S","M","V"],"h":[]},{"d":"2024-12-12","k":"Vedtagelsestekst","t":"Pensionsalderen","f":["S","M","V"],"i":["EL","ALT","SF","RV","K","LA","DD","DF"],"h":[]},{"d":"2024-05-28","k":"Lovforslag","t":"Tildeling af anciennitet til tidlig pension for perioder med opskoling","f":["EL","ALT","SF","S","M","V","DD","DF"],"i":["RV","K","LA"],"h":[]},{"d":"2023-06-01","k":"Lovforslag","t":"Fritagelse for fradrag i efterløn for arbejde i sundhedsvæsenet i 2023 og 2024","f":["EL","ALT","SF","S","RV","M","V","K","DD","DF"],"i":["LA"],"h":[]}]},"all":{"n":1566,"m":[[100,81,81,58,72,58,58,52,54,47,45,34],[81,100,78,60,74,60,60,55,57,52,46,35],[81,78,100,73,82,73,73,62,62,54,48,36],[58,60,73,100,80,100,100,73,72,60,53,40],[72,74,82,80,100,80,80,69,69,56,49,37],[58,60,73,100,80,100,100,73,72,60,53,40],[58,60,73,100,80,100,100,73,72,60,53,40],[52,55,62,73,69,73,73,100,77,77,64,56],[54,57,62,72,69,72,72,77,100,72,64,62],[47,52,54,60,56,60,60,77,72,100,73,70],[45,46,48,53,49,53,53,64,64,73,100,74],[34,35,36,40,37,40,40,56,62,70,74,100]],"c":[[1554,1554,1554,1554,1553,1554,1554,1554,1554,1554,1553,332],[1554,1557,1557,1557,1556,1557,1557,1557,1557,1557,1556,332],[1554,1557,1557,1557,1556,1557,1557,1557,1557,1557,1556,332],[1554,1557,1557,1557,1556,1557,1557,1557,1557,1557,1556,332],[1553,1556,1556,1556,1556,1556,1556,1556,1556,1556,1555,332],[1554,1557,1557,1557,1556,1557,1557,1557,1557,1557,1556,332],[1554,1557,1557,1557,1556,1557,1557,1557,1557,1557,1556,332],[1554,1557,1557,1557,1556,1557,1557,1557,1557,1557,1556,332],[1554,1557,1557,1557,1556,1557,1557,1557,1557,1557,1556,332],[1554,1557,1557,1557,1556,1557,1557,1557,1557,1557,1556,332],[1553,1556,1556,1556,1555,1556,1556,1556,1556,1556,1556,332],[332,332,332,332,332,332,332,332,332,332,332,332]],"ex":[]}}};
+const BLOC={R:["S","SF","EL","ALT","RV"],M:["M","RV"],B:["V","K","LA","DD","DF","BP"]};
+const ZNAME={R:"rød blok",M:"midten",B:"blå blok"};
+const BHINT={S:"Socialdemokratiet leder regeringen og er det største parti i rød blok.",SF:"SF er et venstrefløjsparti og sidder i regering med Socialdemokratiet.",EL:"Enhedslisten er Folketingets mest venstreorienterede parti og støtter den S-ledede regering.",ALT:"Alternativet er et grønt venstrefløjsparti og støtter den S-ledede regering.",RV:"Radikale Venstre kan placeres både i rød blok og på midten.",
+  M:"Moderaterne kalder sig selv et parti hen over midten og har siddet i regering med både Venstre og Socialdemokratiet.",V:"Venstre har ledet flere borgerlige regeringer og er i opposition til den S-ledede regering.",K:"De Konservative er en del af den borgerlige opposition.",LA:"Liberal Alliance er en del af den borgerlige opposition.",DD:"Danmarksdemokraterne er en del af den borgerlige opposition.",DF:"Dansk Folkeparti har tidligere været støtteparti for borgerlige regeringer.",BP:"Borgernes Parti er en del af den borgerlige opposition."};
+const blOk=(id,z)=>!!z&&!!BLOC[z]&&BLOC[z].includes(id);
+function bchip(p){const z=S.bl.pos[p.id], st=S.bl.checked&&z?(blOk(p.id,z)?"ok":"no"):"";
+  return `<button class="chip bchip ${st} ${S.blsel===p.id?"sel":""}" data-bchip="${p.id}" style="${pstyle(p)}" aria-label="${esc(p.name)}${z?", placeret i "+ZNAME[z]:", ikke placeret"}${st==="ok"?", rigtigt":st==="no"?", forkert":""}">${p.id}</button>`;}
+function renderBlocs(){
+  const sorted=[...PARTIES].sort((a,b)=>a.id.localeCompare(b.id,"da"));
+  $("#btray").innerHTML=sorted.filter(p=>!S.bl.pos[p.id]).map(bchip).join("");
+  document.querySelectorAll(".bzone").forEach(zn=>{const z=zn.dataset.zone; zn.querySelector(".bz-chips").innerHTML=PARTIES.filter(p=>S.bl.pos[p.id]===z).map(bchip).join(""); zn.classList.toggle("armed",!!S.blsel&&!S.bl.done);});
+  const placed=Object.keys(S.bl.pos).length, cb=$("#bcheck");
+  cb.disabled=placed<12||S.bl.done||S.bl.checked; cb.textContent=placed<12?`Tjek blokkene (${placed}/12 placeret)`:"Tjek blokkene";
+  const wrong=S.bl.checked&&!S.bl.done?PARTIES.filter(p=>!blOk(p.id,S.bl.pos[p.id])):[];
+  const right=12-wrong.length;
+  $("#bmsg").textContent=S.bl.done?(S.bl.first===12?"Alle 12 rigtige i første forsøg.":`Alle 12 er nu placeret rigtigt. Første forsøg: ${S.bl.first}/12.`):S.bl.checked?`${right} af 12 er placeret rigtigt. Flyt de partier, der har rød ring, og tjek igen.`:"";
+  $("#bfeedback").innerHTML=wrong.length?`<div class="bfb"><b>Hjælp til de partier, der står forkert</b><ul>${wrong.map(p=>`<li><b>${p.id}:</b> ${esc(BHINT[p.id])}</li>`).join("")}</ul></div>`:"";
+  const showStats=S.bl.done||unlocked();
+  $("#bstats").innerHTML=showStats?(S.bl.done?"":`<p class="t-peek">Vises, fordi lærertilstand er slået til. Eleverne ser statistikken, når de har placeret alle partier i den rigtige blok.</p>`)+agreeHTML():"";
+  if(showStats) wireAgree();
+  counts();
+}
+function placeBloc(id,z){ if(S.bl.done) return;
+  if(z) S.bl.pos[id]=z; else delete S.bl.pos[id];
+  S.bl.checked=false; S.blsel=null; save(); renderBlocs(); }
+$("#bcheck").addEventListener("click",()=>{ if(Object.keys(S.bl.pos).length<12) return;
+  const right=PARTIES.filter(p=>blOk(p.id,S.bl.pos[p.id])).length;
+  if(S.bl.first==null) S.bl.first=right;
+  S.bl.checked=true; if(right===12) S.bl.done=true; save(); renderBlocs();
+  if(S.bl.done) setTimeout(()=>{const el=$("#bstats"); if(el) el.scrollIntoView({behavior:"smooth",block:"start"});},150); });
+/* træk, tryk og tastatur */
+let lastBUp={t:0};
+document.addEventListener("pointerdown",e=>{const c=e.target.closest(".bchip"); if(!c||e.button>0||S.bl.done) return; e.preventDefault();
+  const id=c.dataset.bchip, sx=e.clientX, sy=e.clientY; let drag=false, ghost=null, overZ=null;
+  const zoneAt=(x,y)=>{const el=document.elementFromPoint(x,y); return el&&(el.closest(".bzone")||el.closest("#btray"));};
+  const move=ev=>{ if(!drag&&Math.hypot(ev.clientX-sx,ev.clientY-sy)>5){drag=true;ghost=c.cloneNode(true);ghost.className="chip dragging";ghost.style.cssText=c.style.cssText;document.body.appendChild(ghost);c.classList.add("lifting");}
+    if(drag){ghost.style.left=ev.clientX+"px";ghost.style.top=ev.clientY+"px"; if(ev.clientY>innerHeight-50) scrollBy(0,14); else if(ev.clientY<50) scrollBy(0,-14); const z=zoneAt(ev.clientX,ev.clientY);if(overZ&&overZ!==z)overZ.classList.remove("over");overZ=z;if(z&&z.classList.contains("bzone"))z.classList.add("over");}};
+  const up=ev=>{window.removeEventListener("pointermove",move);window.removeEventListener("pointerup",up);window.removeEventListener("pointercancel",up);lastBUp={t:Date.now()};
+    if(overZ) overZ.classList.remove("over");
+    if(drag){ghost.remove();const z=zoneAt(ev.clientX,ev.clientY); if(z) placeBloc(id,z.classList.contains("bzone")?z.dataset.zone:null); else renderBlocs();}
+    else {S.blsel=S.blsel===id?null:id; save(); renderBlocs(); const el=document.querySelector(`.bchip[data-bchip="${id}"]`); if(el) el.focus({preventScroll:true});}};
+  window.addEventListener("pointermove",move);window.addEventListener("pointerup",up);window.addEventListener("pointercancel",up);});
+document.addEventListener("click",e=>{const c=e.target.closest&&e.target.closest(".bchip"); if(!c||e.detail!==0||S.bl.done) return;
+  e.stopPropagation(); const id=c.dataset.bchip; S.blsel=S.blsel===id?null:id; save(); renderBlocs(); const el=document.querySelector(`.bchip[data-bchip="${id}"]`); if(el) el.focus({preventScroll:true});},true);
+document.querySelectorAll(".bzone").forEach(zn=>{
+  const act=()=>{ if(S.blsel) placeBloc(S.blsel,zn.dataset.zone); };
+  zn.addEventListener("click",e=>{ if(e.target.closest(".bchip")||Date.now()-lastBUp.t<350) return; act(); });
+  zn.addEventListener("keydown",e=>{ if(e.target!==zn) return; if(e.key==="Enter"||e.key===" "){e.preventDefault();act();} });});
+$("#btray").addEventListener("click",e=>{ if(e.target.closest(".bchip")||Date.now()-lastBUp.t<350||!S.blsel) return; placeBloc(S.blsel,null); });
+/* statistik */
+const agv=(a,b)=>AGREE.m[AGREE.ids.indexOf(a)][AGREE.ids.indexOf(b)];
+const hmStep=v=>v>=95?5:v>=80?4:v>=65?3:v>=50?2:1;
+const dk=d=>new Date(d+"T12:00:00").toLocaleDateString("da-DK",{day:"numeric",month:"long",year:"numeric"});
+function agreeInsights(){
+  const gov=AGREE.ids.filter(x=>x!=="S"&&agv("S",x)===100);
+  const others=AGREE.ids.filter(x=>!["S",...gov].includes(x));
+  const pairs=[]; others.forEach((a,i)=>others.slice(i+1).forEach(b=>pairs.push([a,b,agv(a,b)])));
+  pairs.sort((x,y)=>y[2]-x[2]);
+  const blueNear=["V","K","LA","DD","DF","BP"].map(x=>[x,agv("S",x)]).sort((a,b)=>b[1]-a[1])[0];
+  const far=AGREE.ids.map(x=>[x,agv("S",x)]).sort((a,b)=>a[1]-b[1])[0];
+  return [
+    `<b>S, ${gov.join(", ").replace(/, ([^,]*)$/," og $1")}</b> stemte ens i alle afstemningerne. De sidder i regering sammen, og regeringspartier stemmer næsten altid ens.`,
+    `Støttepartierne <b>EL</b> og <b>ALT</b> stemte som Socialdemokratiet i ${agv("S","EL")} og ${agv("S","ALT")} procent af afstemningerne. Et støtteparti er ikke bundet af regeringens linje.`,
+    `Uden for regeringen stemte <b>${pairs[0][0]}</b> og <b>${pairs[0][1]}</b> oftest ens: ${pairs[0][2]} procent.`,
+    `I blå blok stemte <b>${blueNear[0]}</b> oftest som Socialdemokratiet (${blueNear[1]} procent). <b>${far[0]}</b> var længst fra (${far[1]} procent).`,
+    `Selv partier langt fra hinanden stemmer ens i mange afstemninger, fordi mange forslag vedtages af et bredt flertal.`];
+}
+const TOPICS=[["udl","Udlændinge og integration","udlændinge og integration"],["klima","Klima og miljø","klima og miljø"],["skat","Skat og omfordeling","skat og omfordeling"],["eu","EU og suverænitet","EU og suverænitet"],["lig","Ligestilling","ligestilling"],["born","Børn, unge og uddannelse","børn, unge og uddannelse"],["pens","Pensionsalder","pensionsalder og tilbagetrækning"],["all","Alle emner","alle emner"]];
+const MINC=5, GOV22=["S","V","M"];
+const tv=(t,a,b)=>{const i=TAGREE.ids.indexOf(a),j=TAGREE.ids.indexOf(b),d=TAGREE.t[t];return d.c[i][j]>=MINC?d.m[i][j]:null};
+const tc=(t,a,b)=>TAGREE.t[t].c[TAGREE.ids.indexOf(a)][TAGREE.ids.indexOf(b)];
+const andList=a=>a.length<2?a.join(""):a.slice(0,-1).join(", ")+" og "+a[a.length-1];
+function topicInsights(sel,t){
+  const T=TOPICS.find(x=>x[0]===t), Om=t==="all"?"I alle afstemningerne":"Om "+T[2], om=t==="all"?"i alle afstemningerne":"om "+T[2];
+  const rows=TAGREE.ids.filter(x=>x!==sel&&tv(t,sel,x)!=null).map(x=>[x,tv(t,sel,x)]);
+  const isGov=GOV22.includes(sel), partners=GOV22.filter(x=>x!==sel);
+  const cand=(isGov?rows.filter(r=>!GOV22.includes(r[0])):rows).sort((a,b)=>b[1]-a[1]);
+  const out=[];
+  if(!cand.length) return [`Der er for få afstemninger med <b>${sel}</b> om dette emne til at sige noget.`];
+  const cut=cand[Math.min(1,cand.length-1)][1], top=cand.filter(r=>r[1]>=cut).slice(0,4).map(r=>`<b>${r[0]}</b> (${r[1]} %)`);
+  out.push(isGov?`<b>${sel}</b> sad i regering med ${andList(partners.map(x=>`<b>${x}</b>`))} og stemte derfor næsten altid som dem. Uden for regeringen stemte ${sel} ${om} oftest som ${andList(top)}.`
+               :`${Om} stemte <b>${sel}</b> oftest som ${andList(top)}.`);
+  const far=cand[cand.length-1]; out.push(`Længst fra var <b>${far[0]}</b> (${far[1]} %).`);
+  if(t!=="all"){
+    const del=rows.filter(r=>tc(t,sel,r[0])>=10&&tv("all",sel,r[0])!=null).map(r=>[r[0],r[1],tv("all",sel,r[0]),r[1]-tv("all",sel,r[0])]).sort((a,b)=>b[3]-a[3]);
+    const up=del[0], dn=del[del.length-1], bits=[];
+    if(up&&up[3]>=5) bits.push(`oftere som <b>${up[0]}</b> (${up[2]} → ${up[1]} %)`);
+    if(dn&&dn[3]<=-5) bits.push(`sjældnere som <b>${dn[0]}</b> (${dn[2]} → ${dn[1]} %)`);
+    if(del.length) out.push(bits.length?`Sammenlignet med alle emner stemte ${sel} ${bits.join(" og ")}, når det handlede om ${T[2]}.`:`Mønstret for ${sel} ligner det, man ser i alle afstemninger under ét.`);
+  }
+  return out;
+}
+function exHTML(sel,t){
+  const ex=TAGREE.t[t].ex; if(!ex||!ex.length) return "";
+  const mini=x=>`<span class="mini${x===sel?" me":""}" style="${pstyle(P(x))}">${x}</span>`;
+  const row=(l,a)=>a.length?`<div class="vr"><span>${l}</span>${a.map(mini).join("")}</div>`:"";
+  return `<details><summary>${t==="pens"?`Se alle ${ex.length} afstemninger`:"Se eksempler på afstemninger, hvor partierne var uenige"}</summary>
+    <ul class="exl">${ex.map(e=>`<li><span class="d">${dk(e.d)}${e.k?" · "+e.k:""}</span><b>${esc(e.t)}</b>${row("For",e.f)}${row("Imod",e.i)}${row("Hverken",e.h)}</li>`).join("")}</ul></details>`;
+}
+function agreeHTML(){
+  const t=S.agt||"nu", topic=t!=="nu", T=TOPICS.find(x=>x[0]===t);
+  const ids=topic?TAGREE.ids:AGREE.ids, sel=S.agp||"S";
+  const val=(a,b)=>topic?tv(t,a,b):agv(a,b);
+  const rows=ids.filter(x=>x!==sel).map(x=>[x,val(sel,x)]).sort((a,b)=>(b[1]??-1)-(a[1]??-1));
+  const D=topic?TAGREE.t[t]:null;
+  const chip=(k,l)=>`<button class="tchip" data-agt="${k}" aria-pressed="${k===t}">${l}</button>`;
+  return `<div class="block agree">
+    <div class="block-head"><h3>Hvem stemmer sammen i Folketingssalen?</h3></div>
+    <p class="muted">Vælg et parti og se, hvor ofte det har stemt det samme som de andre partier. Vælg et emne for at se, om mønstret ændrer sig fra emne til emne.</p>
+    <div class="agree-topics">
+      <span class="eyebrow">Efter valget i 2026</span>
+      <div class="row" role="group" aria-label="Periode">${chip("nu","Alle afstemninger med den nye regering")}</div>
+      <span class="eyebrow">Emner i valgperioden 2022–2026</span>
+      <div class="row" role="group" aria-label="Vælg emne">${TOPICS.map(x=>chip(x[0],x[1])).join("")}</div>
+    </div>
+    <div class="agree-pick" role="group" aria-label="Vælg parti">${ids.map(x=>{const p=P(x);return `<button class="badge" data-agp="${x}" aria-pressed="${x===sel}" style="${pstyle(p)}">${x}</button>`}).join("")}</div>
+    ${topic?`<div class="tnote"><span><b>${T[1]}:</b> ${D.n} afstemninger fra ${dk(TAGREE.from)} til ${dk(TAGREE.to)}. I hele perioden sad S, V og M i regering sammen, så de tre stemmer næsten altid ens.</span>${t==="pens"?`<span>Emnet omfatter også efterløn og tidlig pension.</span>`:""}${D.n<30?`<span>Der er kun ${D.n} afstemninger om emnet, så procenterne er usikre. Se afstemningerne nedenfor.</span>`:""}${sel==="BP"||t==="pens"?`<span>Borgernes Parti har kun været i Folketinget som parti siden januar 2025 og indgår derfor i færre afstemninger.</span>`:""}</div>`:""}
+    <div class="abars" aria-label="Enighed med ${esc(P(sel).name)}">${rows.map(([x,v])=>{const p=P(x);
+      if(v==null) return `<div class="abar" title="For få afstemninger med både ${esc(P(sel).name)} og ${esc(p.name)}"><span class="mono" style="font-weight:700">${x}</span><span class="tr"></span><span class="v na">–</span></div>`;
+      return `<div class="abar" title="${esc(P(sel).name)} og ${esc(p.name)} stemte ens i ${v} % af ${topic?tc(t,sel,x)+" ":""}afstemninger"><span class="mono" style="font-weight:700">${x}</span><span class="tr"><i style="width:${v}%;background:${p.col}"></i></span><span class="v">${v} %</span></div>`}).join("")}</div>
+    <div><span class="eyebrow">Det viser tallene</span><ul class="insights">${(topic?topicInsights(sel,t):agreeInsights()).map(x=>`<li>${x}</li>`).join("")}</ul></div>
+    ${topic&&t!=="all"?exHTML(sel,t):""}
+    <div><span class="eyebrow">Diskutér</span><ul class="insights">${topic?`
+      <li>Stemmer partierne mere forskelligt om nogle emner end om andre? Hvilke, og hvorfor tror du, det er sådan?</li>
+      <li>Passer mønstret for dette emne bedst med den fordelingspolitiske eller den værdipolitiske akse i kompasset?</li>
+      <li>Find et parti, der skifter makker fra emne til emne. Hvad siger det om, hvordan partier samarbejder?</li>`:`
+      <li>Moderaterne kalder sig et midterparti. Hvad viser tallene om, hvem partiet stemmer med lige nu? Hvorfor?</li>
+      <li>Hvorfor stemmer EL og ALT ikke altid som regeringen, selvom de er dens støttepartier?</li>
+      <li>Giver det stadig mening at tale om rød og blå blok, når S har siddet i regering med både V og M?</li>`}</ul></div>
+    <details><summary>Se hele tabellen</summary>
+      <div class="hm-wrap" style="margin-top:10px"><table class="hm"><thead><tr><th></th>${ids.map(x=>`<th scope="col">${x}</th>`).join("")}</tr></thead><tbody>
+      ${ids.map(a=>`<tr><th scope="row">${a}</th>${ids.map(b=>{if(a===b)return `<td class="self">–</td>`;const v=val(a,b);if(v==null)return `<td class="self" title="For få afstemninger">·</td>`;const k=hmStep(v);return `<td title="${a} og ${b}: ${v} %" style="background:var(--hm${k});color:var(${k>=4?"--hm-ink-light":"--hm-ink-dark"})">${v}</td>`}).join("")}</tr>`).join("")}
+      </tbody></table></div>
+      <p class="src" style="margin-top:6px">Mørkere felt = partierne stemte oftere ens.</p></details>
+    <p class="src">${topic?`Kilde: Folketingets åbne data (oda.ft.dk). Afstemninger i Folketingssalen fra ${dk(TAGREE.from)} til ${dk(TAGREE.to)}, hvor S, V og M dannede regering. Afstemningerne er sorteret i emner ud fra Folketingets egne emneord og sagens titel, og en afstemning kan høre til flere emner. Tallet viser, hvor stor en andel af afstemningerne to partier stemte det samme (for, imod eller hverken for eller imod). Ændringsforslag tæller med. Løsgængere og fravær tæller ikke med.`:`Kilde: Folketingets åbne data (oda.ft.dk). ${AGREE.n} afstemninger i Folketingssalen fra ${dk(AGREE.from)} til ${dk(AGREE.to)}. Tallet viser, hvor stor en andel af afstemningerne to partier stemte det samme (for, imod eller hverken for eller imod). Løsgængere og fravær tæller ikke med. Det er et forholdsvis lille antal afstemninger, så tallene kan ændre sig.`}</p>
+  </div>`;
+}
+function wireAgree(){
+  const re=()=>{const y=window.scrollY;renderBlocs();window.scrollTo(0,y);};
+  document.querySelectorAll("[data-agp]").forEach(b=>b.onclick=()=>{S.agp=b.dataset.agp;save();re();});
+  document.querySelectorAll("[data-agt]").forEach(b=>b.onclick=()=>{S.agt=b.dataset.agt;save();re();});
+}
+
+/* ---------- BEGREBER (opslag) ---------- */
+const DEFS_HTML=`<div><h3>Fordelingspolitik</h3>
+  <p>Handler om, hvordan samfundets økonomiske goder fordeles: skat, sociale ydelser, velfærd og hvor meget staten og markedet skal styre. I kompasset er det den vandrette akse.</p>
+  <div class="side"><b>Venstre</b><ul><li>Mere omfordeling og højere skat for de rigeste, fx en formueskat</li><li>Større offentlig sektor og mere velfærd</li><li>Højere sociale ydelser og ingen profit på velfærd</li></ul></div>
+  <div class="side"><b>Højre</b><ul><li>Lavere skat, fx lavere eller ingen topskat</li><li>Mindre offentlig sektor og mere marked</li><li>Privat konkurrence i velfærden, og det skal kunne betale sig at arbejde</li></ul></div></div>
+ <div><h3>Værdipolitik</h3>
+  <p>Handler om normer og værdier: udlændinge og integration, ret og straf, klima og miljø, EU og ligestilling. I kompasset er det den lodrette akse.</p>
+  <div class="side"><b>Venstreorienteret</b><ul><li>Lempeligere udlændingepolitik</li><li>Resocialisering frem for hårdere straffe</li><li>Høje klimaambitioner og positiv over for EU og internationalt samarbejde</li><li>Ligestilling via fx øremærket barsel</li></ul></div>
+  <div class="side"><b>Højreorienteret</b><ul><li>Stram udlændingepolitik</li><li>Lov og orden og hårdere straffe</li><li>Skepsis over for dyre klimatiltag og vægt på national selvbestemmelse frem for EU</li><li>Familiens frihed og traditionelle værdier frem for statslige krav</li></ul></div></div>
+ <p class="note">Husk: Et parti kan stå til venstre på den ene akse og til højre på den anden. Fx kan et parti gå ind for høje sociale ydelser og samtidig en stram udlændingepolitik.</p>`;
+document.addEventListener("click",e=>{const b=e.target.closest("[data-defs]"); if(!b) return;
+  const sec=b.closest("section"), panel=sec&&sec.querySelector(".defs"); if(!panel) return;
+  if(!panel.innerHTML) panel.innerHTML=DEFS_HTML;
+  panel.hidden=!panel.hidden; b.setAttribute("aria-expanded",String(!panel.hidden)); b.textContent=panel.hidden?"Husk begreberne":"Skjul begreberne";});
+
+/* ---------- LÆRERVISNING: KILDER TIL KOMPASSET ---------- */
+/* Modelplaceringer: FALS-modellen 2026 fra poltest.dk (gennemsnit af en række samfundsfagslæreres placeringer; undersøgelse ved Lasse Christensen via FALS' facebookgruppe).
+   Omregnet fra poltest.dk's koordinater (plotområde 500 x 500 px) til -10..10 og afrundet til nærmeste halve.
+   Til sammenligning: Chapel Hill Expert Survey 2024 (chesdata.eu). lrecon: økonomisk venstre-højre 0-10, galtan: GAL-TAN 0-10, imm: udlændingepolitik 0-10.
+   CHES x = (lrecon-5)*2, CHES y = ((galtan+imm)/2-5)*2. BP findes ikke i CHES 2024; tallene er Nye Borgerliges. */
+const CHES={S:[4.09,4.00,7.27],SF:[2.73,3.00,4.64],EL:[1.36,1.91,3.00],ALT:[2.36,1.73,3.27],RV:[5.55,1.73,3.00],M:[5.64,3.82,5.82],V:[6.55,4.64,7.09],K:[7.00,5.91,7.18],LA:[8.36,4.55,6.55],DD:[6.73,6.55,8.73],DF:[5.55,7.64,9.00],BP:[7.91,7.18,9.09]};
+const nf=v=>(Math.round(v*2)/2).toLocaleString("da-DK",{minimumFractionDigits:1,maximumFractionDigits:1});
+function renderTeachSrc(){const el=$("#teachsrc"); if(!el) return;
+  el.innerHTML=`<div class="block-head"><h3>Lærervisning: Kilder til kompasset</h3><button class="btn ghost" id="t-model">${S.showModel?"Skjul":"Vis"} rigtige placeringer</button></div>
+  <p>Modelplaceringerne bygger på <b>FALS-modellen (2026)</b> fra poltest.dk. Den er et gennemsnit af, hvordan en række samfundsfagslærere har placeret partierne. Undersøgelsen er lavet af Lasse Christensen via FALS' facebookgruppe i 2026.</p>
+  <ul class="insights">
+    <li>Placeringerne er omregnet fra poltest.dk til kompassets skala fra −10 til 10 og afrundet til nærmeste halve. Negative tal betyder venstre (vandret) og værdipolitisk venstreorienteret (lodret, øverst).</li>
+    <li>En elevs placering godkendes, når den ligger højst ${String(RADIUS).replace(".",",")} enheder fra modelplaceringen.</li>
+    <li><b>Til sammenligning</b> viser tabellen også placeringer beregnet ud fra <b>Chapel Hill Expert Survey (CHES) 2024</b>, hvor politologer vurderer partierne. Fordelingspolitik er CHES' økonomiske venstre-højre-skala. Værdipolitik er gennemsnittet af CHES' GAL-TAN-skala og partiets udlændingepolitik. Borgernes Parti er ikke med i CHES 2024, så her bruges Nye Borgerlige.</li></ul>
+  <div class="hm-wrap"><table class="srct"><thead><tr><th>Parti</th><th>FALS 2026 x</th><th>FALS 2026 y</th><th>CHES 2024 x</th><th>CHES 2024 y</th></tr></thead><tbody>
+  ${PARTIES.map(p=>{const c=CHES[p.id];return `<tr><td><span class="badge" style="${pstyle(p)};min-width:34px;height:26px;font-size:.75rem">${p.id}</span></td><td>${nf(p.x)}</td><td>${nf(p.y)}</td><td>${nf((c[0]-5)*2)}</td><td>${nf(((c[1]+c[2])/2-5)*2)}</td></tr>`}).join("")}
+  </tbody></table></div>
+  <p class="src">Kilder: FALS-modellen 2026, poltest.dk (vælg "FALS-model (2026)" på forsiden). Chapel Hill Expert Survey 2024, chesdata.eu (datafil CHES_2024_final_v2.csv). Ekspertvurderinger og lærernes placeringer er et godt udgangspunkt, men ikke et endegyldigt facit. Forskellene kan bruges til diskussion i klassen.</p>`;
+  $("#t-model").onclick=()=>{S.showModel=!S.showModel;save();renderCompass();};
+  const t2=$("#t-model2"); t2.textContent=S.showModel?"Skjul rigtige placeringer":"Vis rigtige placeringer"; t2.onclick=()=>{S.showModel=!S.showModel;save();renderCompass();};
+}
+
+/* ---------- INIT ---------- */
+renderP1();renderP2();
+renderTeacher();
+{let st=S.step||1; while(st>1&&!canGo(st)) st--; go(st);}
+</script>
+</body>
+</html>
